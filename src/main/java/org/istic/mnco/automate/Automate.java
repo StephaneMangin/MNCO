@@ -7,10 +7,10 @@
 /**
  * Automate g&eacute;n&eacute;rique &agrave; nombre fini d'&eacute;tats
  */
-package automate;
+package org.istic.mnco.automate;
 
 
-import es.LectureFichierTexte;
+import org.istic.mnco.es.LectureFichierTexte;
 
 /**
  * Moteur pour un automate M e nombre fini d'etat.

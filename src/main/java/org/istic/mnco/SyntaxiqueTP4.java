@@ -1,3 +1,4 @@
+package org.istic.mnco;
 
 /*
  * SyntaxiqueTP4.java : analyseur syntaxique du TP 4
@@ -15,7 +16,10 @@
   * <expr>		-> * <exp> <exp>
   * <expr>		-> / <exp> <exp>	
   */
-import automate.*; import lexical.*;
+import org.istic.mnco.automate.*;
+import org.istic.mnco.lexical.*;
+import org.istic.mnco.automate.Analex1;
+import org.istic.mnco.lexical.constlex;
 
 public class SyntaxiqueTP4  {
 	
@@ -79,7 +83,7 @@ public class SyntaxiqueTP4  {
     GenEcrirePF();  break;
                          
 	                        
-	default : System.out.println("Ereur ds expr") ; break; 
+	default : System.out.println("Erreur ds expr") ; break;
 	}
 		
 	}

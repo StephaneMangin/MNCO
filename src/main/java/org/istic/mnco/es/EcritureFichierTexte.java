@@ -1,4 +1,5 @@
-package es;
+package org.istic.mnco.es;
+
 import java.io.*;
 
 public class EcritureFichierTexte {

@@ -1,6 +1,8 @@
-import automate.*;
+package org.istic.mnco;
+
+import org.istic.mnco.automate.Analex1;
 /*
- * SyntaxiqueTP5squelette.java
+ * SyntaxiqueTP5.java
  */
 
 
@@ -18,7 +20,7 @@ import automate.*;
 * 
 */
 
-public class SyntaxiqueTP5squelette  {
+public class SyntaxiqueTP5 {
 	
 
 	
@@ -29,7 +31,7 @@ public class SyntaxiqueTP5squelette  {
 	/*
 	 * Constructeur
 	 */
-	SyntaxiqueTP5squelette(String nomfich){
+	SyntaxiqueTP5(String nomfich){
 		monauto = new Analex1();
 		monauto.initTete(nomfich);
 		AvanceTete(); // lire une premiere unite lexicale

@@ -1,4 +1,4 @@
-package lexical;
+package org.istic.mnco.lexical;
 
 public class unitelex {
 	

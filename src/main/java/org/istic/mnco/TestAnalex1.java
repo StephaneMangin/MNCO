@@ -1,7 +1,8 @@
-import automate.*;
+package org.istic.mnco;
 
-import     lexical.*;
- 
+import org.istic.mnco.automate.Analex1;
+import org.istic.mnco.lexical.constlex;
+
 public class TestAnalex1  {
 
 	/**

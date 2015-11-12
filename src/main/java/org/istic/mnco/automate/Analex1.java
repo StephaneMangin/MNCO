@@ -3,9 +3,9 @@
  */
 
 
-package automate;
+package org.istic.mnco.automate;
 
-import lexical.*;
+import org.istic.mnco.lexical.*;
 
 public class Analex1 extends Automate {
     
