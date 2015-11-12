@@ -1,6 +1,7 @@
 package org.istic.mnco;
 
 import org.istic.mnco.automate.Analex1;
+import static org.istic.mnco.lexical.constlex.*;
 /*
  * SyntaxiqueTP5.java
  */
@@ -63,7 +64,7 @@ public class SyntaxiqueTP5 {
 		void Exp() {
 			// <Exp>  ::= <Terme> <STerme>
 		      
-			
+			Terme(); STerme(); AvanceTete();
 			//. .. COMPLETER !!
 	
 		};// fin Exp()
@@ -72,15 +73,20 @@ public class SyntaxiqueTP5 {
 		void Terme(){
 
 			// <Terme> ::= <Facteur> <SFacteur>
-			
-//			. .. COMPLETER !!
-	
-		} // fin Terme()
+			//			. .. COMPLETER !!
+            Facteur(); SFacteur(); AvanceTete();
+
+
+            } // fin Terme()
 		
 		void STerme() {
 			// <STerme> ::= + <Exp> | - <Exp> | vide
-			
-		      
+            switch (lexlu) {
+                case lexplus: Exp(); AvanceTete(); break;
+                case lexmoins: Exp(); AvanceTete(); break;
+                default: break;
+            }
+
 //			. .. COMPLETER !!
 		     }; // fin Sterme()
 
@@ -88,6 +94,15 @@ public class SyntaxiqueTP5 {
 			// <Facteur> ::= Entier | ( <Exp> )
 			
 //			. .. COMPLETER !!
+            switch (lexlu) {
+                case lexentier: GPEntier(); AvanceTete(); break;
+                case '(': Exp(); AvanceTete();
+                    if (lexlu != lexPF) {
+                        System.out.println("Erreur syntaxique");
+                    }
+                    break;
+                    default: break;
+            }
 		
 		} // fin Facteur()
 
@@ -96,7 +111,9 @@ public class SyntaxiqueTP5 {
 		//<SFacteur> ::= * <Terme> | / <Terme> | vide
 		
 //			. .. COMPLETER !!
-			
+			switch (lexlu) {
+                case lexmult:
+            }
 
 		}; // fin SFacteur()
 		

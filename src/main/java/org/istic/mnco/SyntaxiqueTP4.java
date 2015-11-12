@@ -9,6 +9,8 @@ import org.istic.mnco.lexical.constlex;
 
 import java.util.GregorianCalendar;
 
+import static org.istic.mnco.lexical.constlex.*;
+
 /**
   * Reconnait des expressions PREFIXES
   * Produit la forme INFIXE
@@ -49,24 +51,24 @@ public class SyntaxiqueTP4  {
 
 	public void Axiome(){
 		expr();
-		if (! (lexlu == constlex.lexpoint) ) {System.out.println("Erreur ds axiome : . attendu");}
+		if (! (lexlu == lexpoint) ) {System.out.println("Erreur ds axiome : . attendu");}
 		else  {GenEcrire();}
 	}
 
 	public void expr() {
         switch (lexlu) {
-            case constlex.lexident : GenEcrire(); AvanceTete(); break;
-	        case constlex.lexentier : GenEcrire(); AvanceTete(); break;
+            case lexident : GenEcrire(); AvanceTete(); break;
+	        case lexentier : GenEcrire(); AvanceTete(); break;
 	        default :GenEcrirePO();  op(); expr(); GenEcrireOP(depile()); expr(); GenEcrirePF();
 	    }
 	}
 
     public void op() {
         switch (lexlu) {
-            case constlex.lexplus : empile("+"); AvanceTete() ;  break;
-            case constlex.lexmoins : empile("-"); AvanceTete() ;  break;
-            case constlex.lexmult : empile("*"); AvanceTete() ;  break;
-            case constlex.lexdiv : empile("/"); AvanceTete() ;  break;
+            case lexplus : empile("+"); AvanceTete() ;  break;
+            case lexmoins : empile("-"); AvanceTete() ;  break;
+            case lexmult : empile("*"); AvanceTete() ;  break;
+            case lexdiv : empile("/"); AvanceTete() ;  break;
             default : System.out.println("Erreur ds op") ; break;
         }
     }
