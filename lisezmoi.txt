@@ -1,0 +1,24 @@
+REPERTOIRE src/AUTOMATE
+
+  .Automate.java (moteur d'automate)
+  .Analex1.java  (analyseur lexical pour les tps 4 et 5)
+  
+  
+ REPERTOIRE src/LEXICAL
+   .constlex.java : constantes lexicales
+   .unitelex.java : unite lexical (doublet public int typelex ; public String valeurlex; )
+   
+ 
+ src/*
+
+ SyntaxiqueTP4.java :  analyseur syntaxique + generation (partie 1 du TP4 + squelette partie2)
+                       expressions PREFIXES -> forme INFIXE
+ TestSyntaxiqueTP4.java :  test de SyntaxiqueTP4.java  (travaille sur testSyntaxique4.txt)
+
+
+ SyntaxiqueTP5.java :  analyseur syntaxique + generation 
+ SyntaxiqueTP5squelette.java :  squelette (à completer)
+
+ TestSyntaxiqueTP5.java :  test de SyntaxiqueTP5.java  (travaille sur testSyntaxique5.txt)
+   
+  
