@@ -347,9 +347,8 @@ System.out.println("Etat :"+i+"->"+(char)j+"->"+table_transitions[i] [j]+" ("+ta
 	 * Vide par défaut
 	 */
 	protected void actionInitiale(){
-	} ;
-	 
-	
+	}
+
 
 	protected void actionFinale2(){
 		System.out.print("Fin fichier   :");System.out.println(bande.finDeFichier());
@@ -368,8 +367,8 @@ System.out.println("Etat :"+i+"->"+(char)j+"->"+table_transitions[i] [j]+" ("+ta
 	 *  de parametrer la condition d'arret de l'automate.
 	 *  
 	 */
-	protected boolean fini(){return false;};
-	
+	protected boolean fini(){return false;}
+
 	/**
 	 * executer une action
 	 */
@@ -405,15 +404,15 @@ System.out.println("Etat :"+i+"->"+(char)j+"->"+table_transitions[i] [j]+" ("+ta
 	 * trace_on : active la trace
 	 *
 	 */
-	public void trace_on(){ontrace=true;};
-	
+	public void trace_on(){ontrace=true;}
+
 	/**
 	 * trace_off : desactive la trace
 	 *
 	 */
-	public void trace_off(){ontrace=false;};
-	
-	
+	public void trace_off(){ontrace=false;}
+
+
 	/**
 	 * Lancer() : lance l'automate
 	 * @pre : IniTete a ete execute

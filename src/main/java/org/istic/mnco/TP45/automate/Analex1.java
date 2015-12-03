@@ -54,9 +54,9 @@ public class Analex1 extends Automate {
 	}
 	
 	 // ici on redéfini fini()
-	 	protected boolean fini(){return (etatCourant==0) ;};
-	 
-	 	// PROGRAMMATION DES ACTIONS
+	 	protected boolean fini(){return (etatCourant==0) ;}
+
+	// PROGRAMMATION DES ACTIONS
 	    // Partie 2  à réaliser pour un automate particulier
 	 
 	 	int lexlu ; // type de l'unite lue

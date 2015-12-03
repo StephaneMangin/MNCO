@@ -1,5 +1,9 @@
-package es;
-import java.io.*;
+package org.istic.mnco.TP6.es;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class Ecriture {
 // pour ecrire dans un fichier texte
@@ -10,59 +14,58 @@ public class Ecriture {
 // maSortie.ecrire(" ans.") // ecrit une String
 // maSortie.fermer();
 
-  private PrintWriter leFichier; 
-  private String nom;
+    private PrintWriter leFichier;
+    private String nom;
 
-  public Ecriture(String nom) {
-	  // initialise un accès en écriture sur le fichier de nom nom
-	  // crée le fichier s'il n'existe pas
-	    this.nom=nom;
-	    try {
-	      leFichier = new PrintWriter(new FileOutputStream(nom));
-	    } 
-	    catch(IOException e){
-	    	
-	      System.out.println("erreur lors de la création du fichier "+nom+" : "+e.getMessage());
-	      Thread.dumpStack();
-	    }
-	  }
-  public Ecriture(File fich) {
-	  // initialise un accès en écriture sur le fichier de nom nom
-	  // crée le fichier s'il n'existe pas
-	    this.nom=fich.getAbsolutePath();
-	    try {
-	      leFichier = new PrintWriter(new FileOutputStream(nom));
-	    } 
-	    catch(IOException e){
-	    	
-	      System.out.println("erreur lors de la création du fichier "+nom+" : "+e.getMessage());
-	      Thread.dumpStack();
-	    }
-	  }
+    public Ecriture(String nom) {
+        // initialise un accès en écriture sur le fichier de nom nom
+        // crée le fichier s'il n'existe pas
+        this.nom = nom;
+        try {
+            leFichier = new PrintWriter(new FileOutputStream(nom));
+        } catch (IOException e) {
 
-  public void fermer() { // ferme le fichier
-    leFichier.close();
-  }
+            System.out.println("erreur lors de la création du fichier " + nom + " : " + e.getMessage());
+            Thread.dumpStack();
+        }
+    }
+
+    public Ecriture(File fich) {
+        // initialise un accès en écriture sur le fichier de nom nom
+        // crée le fichier s'il n'existe pas
+        this.nom = fich.getAbsolutePath();
+        try {
+            leFichier = new PrintWriter(new FileOutputStream(nom));
+        } catch (IOException e) {
+
+            System.out.println("erreur lors de la création du fichier " + nom + " : " + e.getMessage());
+            Thread.dumpStack();
+        }
+    }
+
+    public void fermer() { // ferme le fichier
+        leFichier.close();
+    }
 
     public void ecrire(char c) { // écrit un caractère
-    leFichier.print(c);
-  }
+        leFichier.print(c);
+    }
 
-  public void ecrire(String s) { // écrit une chaîne de caractères
-    leFichier.print(s);
-  }
+    public void ecrire(String s) { // écrit une chaîne de caractères
+        leFichier.print(s);
+    }
 
-  public void ecrire(int k) { // écrit un entier sous forme décimale
-     leFichier.print(k);
-  }
+    public void ecrire(int k) { // écrit un entier sous forme décimale
+        leFichier.print(k);
+    }
 
-  public void ecrire(boolean b) { // écrit un booléen, "true" ou "false"
-     leFichier.print(b); 
-  }
+    public void ecrire(boolean b) { // écrit un booléen, "true" ou "false"
+        leFichier.print(b);
+    }
 
-  public void ecrire(double x) { // écrit un réel sous forme usuelle 
-     leFichier.print(x);   
-  }
+    public void ecrire(double x) { // écrit un réel sous forme usuelle
+        leFichier.print(x);
+    }
 }
 
 

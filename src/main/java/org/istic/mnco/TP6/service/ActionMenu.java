@@ -1,4 +1,4 @@
-package service;
+package org.istic.mnco.TP6.service;
 /*
  * Created on 28 oct. 2004
  *
@@ -8,10 +8,10 @@ package service;
 
 /**
  * @author herman
- *
- * TODO To change the template for this generated type comment go to
- * Window - Preferences - Java - Code Style - Code Templates
+ *         <p>
+ *         TODO To change the template for this generated type comment go to
+ *         Window - Preferences - Java - Code Style - Code Templates
  */
 public interface ActionMenu {
-	public void executer (String [] args)throws Exception ;
+    void executer(String[] args) throws Exception;
 }

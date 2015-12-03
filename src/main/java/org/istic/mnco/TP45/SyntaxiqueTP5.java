@@ -58,7 +58,7 @@ public class SyntaxiqueTP5 {
 		Ginit();
 		
 		// ... COMPLETER !!
-		}; // fin Axiome()
+		} // fin Axiome()
 
 		void Exp() {
 			// <Exp>  ::= <Terme> <STerme>
@@ -66,7 +66,7 @@ public class SyntaxiqueTP5 {
 			Terme(); STerme(); AvanceTete();
 			//. .. COMPLETER !!
 	
-		};// fin Exp()
+		}// fin Exp()
 
 
 		void Terme(){
@@ -87,7 +87,7 @@ public class SyntaxiqueTP5 {
             }
 
 //			. .. COMPLETER !!
-		     }; // fin Sterme()
+		     } // fin Sterme()
 
 		void Facteur()  { 
 			// <Facteur> ::= Entier | ( <Exp> )
@@ -114,7 +114,7 @@ public class SyntaxiqueTP5 {
                 case lexmult:
             }
 
-		}; // fin SFacteur()
+		} // fin SFacteur()
 		
 	
 		// POINTS DE GENERATION
