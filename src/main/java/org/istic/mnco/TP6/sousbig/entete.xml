@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE Prog>
+<?xml-stylesheet type="text/xsl" href="xml2svg.xsl" ?>
+<Prog>
+<Decls>
+<Decl>
+[ENTIER, entier]
+[IDF, i]
+<Idents>
+[VIRG, ,]
+[IDF, j]
+<Idents>
+[VIRG, ,]
+[IDF, k]
+<Idents>
+</Idents>
+</Idents>
+</Idents>
+</Decl>
+<SuiteDecls>
+[PT_VIRG, ;]
+<Decls>
+<Decl>
+[BOOLEEN, booleen]
+[IDF, b]
+<Idents>
+</Idents>
+</Decl>
+<SuiteDecls>
+</SuiteDecls>
+</Decls>
+<SuiteDecls>
+</SuiteDecls>
+</SuiteDecls>
+</Decls>
+[DEBUT, debut]
+<Insts>
+<Instruction>
+[LIRE, lire]
+[IDF, b]
+</Instruction>
+<SuiteInsts>
+[PT_VIRG, ;]
+<Insts>
+<Instruction>
+[LIRE, lire]
+[IDF, i]
+</Instruction>
+<SuiteInsts>
+[PT_VIRG, ;]
+<Insts>
+<Instruction>
+<Exp>
+<SansAff>
+<Disjonction>
+<Conjonction>
+<Relation>
+<Terme>
+<Facteur>
+<Primaire>
+[IDF, j]
+</Primaire>
+</Facteur>
+<RFacteur>
+</RFacteur>
+</Terme>
+<RTerme>
+</RTerme>
+</Relation>
+<RRelation>
+</RRelation>
+</Conjonction>
+<RConjonction>
+</RConjonction>
+</Disjonction>
+<RDisjonction>
+</RDisjonction>
+</SansAff>
+<RExp>
+[AFF, :=]
+<Exp>
+<SansAff>
+<Disjonction>
+<Conjonction>
+<Relation>
+<Terme>
+<Facteur>
+<Primaire>
+[SI, si]
+<Exp>
+<SansAff>
+<Disjonction>
+<Conjonction>
+<Relation>
+<Terme>
+<Facteur>
+<Primaire>
+[IDF, i]
+</Primaire>
+</Facteur>
+<RFacteur>

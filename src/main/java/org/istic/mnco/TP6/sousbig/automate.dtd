@@ -1,0 +1,12 @@
+<!ELEMENT automate   (actions, transitions, finaux, arret, alafin)>
+<!ELEMENT actions      (#PCDATA)>
+<!ELEMENT transitions       (trans*)>
+<!ELEMENT trans      (de, a, sur, faire)>
+<!ELEMENT de      (#PCDATA)>
+<!ELEMENT a      (#PCDATA)>
+<!ELEMENT sur      (#PCDATA)>
+<!ELEMENT faire      (#PCDATA)>
+<!ELEMENT finaux      (etat*)>
+<!ELEMENT etat      (#PCDATA)>
+<!ELEMENT arret      (#PCDATA)>
+<!ELEMENT alafin      (#PCDATA)>

@@ -1,0 +1,7 @@
+entier i, j ;
+debut
+   lire i ;
+   lire j ;
+   ecrire i ;
+   	ecrire j	
+fin

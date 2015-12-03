@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<g style="fill-rule:nonzero;clip-rule:nonzero;stroke-miterlimit:4; font-family:ArialMT;font-size:12;;fill:#FFFFD0;">
+<rect stroke="black" height="16" width="34.1375" y="12" x="16"/>
+<?xmlizer tab="0" ligne="0" xMax="74.1375" yMax="44"?>
+<text style="stroke:none;;fill:black;" y="24" x="20">Prog</text>
+<rect stroke="black" height="16" width="40.595000000000006" y="32" x="36"/>
+<?xmlizer tab="1" ligne="1" xMax="100.595" yMax="64"?>
+<text style="stroke:none;;fill:black;" y="44" x="40">Decls</text>
+<path stroke="black" d="M36,40h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M26,40v-12" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<rect stroke="black" height="16" width="34.445" y="52" x="56"/>
+<?xmlizer tab="2" ligne="2" xMax="114.445" yMax="84"?>
+<text style="stroke:none;;fill:black;" y="64" x="60">Decl</text>
+<path stroke="black" d="M56,60h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M46,60v-12" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<?xmlizer tab="3" ligne="3" xMax="195.6375" yMax="104"?>
+<text style="stroke:none;;fill:black;" y="84" x="80">[ENTIER, enti ...</text>
+<path stroke="black" d="M76,80h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M66,80v-12" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<rect stroke="black" height="16" width="66.7325" y="92" x="56"/>
+<?xmlizer tab="2" ligne="4" xMax="146.73250000000002" yMax="124"?>
+<text style="stroke:none;;fill:black;" y="104" x="60">SuiteDecls</text>
+<path stroke="black" d="M56,100h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M46,100v-52" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<?xmlizer tab="3" ligne="5" xMax="176.265" yMax="144"?>
+<text style="stroke:none;;fill:black;" y="124" x="80">[PT_VIRG, ;]</text>
+<path stroke="black" d="M76,120h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M66,120v-12" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<?xmlizer tab="1" ligne="6" xMax="166.0925" yMax="164"?>
+<text style="stroke:none;;fill:black;" y="144" x="40">[DEBUT, debut ...</text>
+<path stroke="black" d="M36,140h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M26,140v-112" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<rect stroke="black" height="16" width="35.06" y="152" x="36"/>
+<?xmlizer tab="1" ligne="7" xMax="95.06" yMax="184"?>
+<text style="stroke:none;;fill:black;" y="164" x="40">Insts</text>
+<path stroke="black" d="M36,160h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M26,160v-132" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<rect stroke="black" height="16" width="63.35" y="172" x="56"/>
+<?xmlizer tab="2" ligne="8" xMax="143.35" yMax="204"?>
+<text style="stroke:none;;fill:black;" y="184" x="60">Instruction</text>
+<path stroke="black" d="M56,180h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M46,180v-12" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<?xmlizer tab="3" ligne="9" xMax="185.1825" yMax="224"?>
+<text style="stroke:none;;fill:black;" y="204" x="80">[LIRE, lire]  ...</text>
+<path stroke="black" d="M76,200h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M66,200v-12" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<rect stroke="black" height="16" width="61.1975" y="212" x="56"/>
+<?xmlizer tab="2" ligne="10" xMax="141.1975" yMax="244"?>
+<text style="stroke:none;;fill:black;" y="224" x="60">SuiteInsts</text>
+<path stroke="black" d="M56,220h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M46,220v-52" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<?xmlizer tab="3" ligne="11" xMax="176.265" yMax="264"?>
+<text style="stroke:none;;fill:black;" y="244" x="80">[PT_VIRG, ;]</text>
+<path stroke="black" d="M76,240h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M66,240v-12" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<?xmlizer tab="1" ligne="12" xMax="115.35499999999999" yMax="284"?>
+<text style="stroke:none;;fill:black;" y="264" x="40">[FIN, fin]</text>
+<path stroke="black" d="M36,260h-10" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+<path stroke="black" d="M26,260v-232" style="stroke-width:1;stroke-miterlimit:3;fill:none;"/>
+</g>
+</svg>

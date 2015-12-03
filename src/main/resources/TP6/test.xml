@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE Prog><Prog>
+<Decls>
+<Decl>
+[ENTIER, entier]
+[IDF, i]
+<Idents>
+[VIRG, ,]
+[IDF, j]
+<Idents>
+</Idents>
+</Idents>
+</Decl>
+<SuiteDecls>
+[PT_VIRG, ;]
+<Decls>
+</Decls>
+<SuiteDecls>
+</SuiteDecls>
+</SuiteDecls>
+</Decls>
+[DEBUT, debut]
+<Insts>
+<Instruction>
+[LIRE, lire]
+[IDF, i]
+</Instruction>
+<SuiteInsts>
+[PT_VIRG, ;]
+<Insts>
+<Instruction>
+[LIRE, lire]
+[IDF, j]
+</Instruction>
+<SuiteInsts>
+[PT_VIRG, ;]
+<Insts>
+<Instruction>
+[ECRIRE, ecrire]
+[IDF, i]
+</Instruction>
+<SuiteInsts>
+[PT_VIRG, ;]
+<Insts>
+<Instruction>
+[ECRIRE, ecrire]
+[IDF, j]
+</Instruction>
+<SuiteInsts>
+</SuiteInsts>
+</Insts>
+</SuiteInsts>
+</Insts>
+</SuiteInsts>
+</Insts>
+</SuiteInsts>
+</Insts>
+[FIN, fin]
+</Prog>

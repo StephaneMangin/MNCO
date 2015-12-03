@@ -1,0 +1,29 @@
+entier i, j, k ;
+booleen b
+debut
+   lire i ;
+   k := j := 0 ;
+   b:= i < 50 ;
+   si b
+       alors
+   			j
+   		sinon
+   			k
+   	fsi := si non (i < 50)
+   			alors
+   				si i < 75
+   					alors
+   						12
+   					sinon
+   						21
+   				fsi
+   			sinon
+   				i
+   		   fsi ;
+   	si b
+   		alors
+   			27
+   	fsi ;
+   	ecrire j ;
+   	ecrire k	
+fin

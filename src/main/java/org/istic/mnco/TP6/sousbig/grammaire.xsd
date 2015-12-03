@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+	<element name="corps"><complexType mixed="true"/></element>
+		<element name="grammaire"><complexType><sequence><element ref="regle" maxOccurs="unbounded"/></sequence></complexType></element><element name="pd"><complexType><sequence><element ref="selection"/><element ref="corps"/></sequence></complexType></element><element name="gauche"><complexType mixed="true"/></element><element name="selection"><complexType mixed="true"/></element><element name="regle"><complexType><sequence><element ref="gauche"/><element ref="pd" maxOccurs="unbounded"/></sequence></complexType></element></schema>

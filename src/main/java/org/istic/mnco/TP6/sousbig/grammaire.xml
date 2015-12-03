@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE grammaire SYSTEM "grammaire.dtd">
+<?xml-stylesheet type="text/xsl" href="grammaire.xsl" ?>
+<grammaire>
+	<regle>
+		<gauche>$debut Prog $fin</gauche>
+		<pd>
+			<selection>ENTIER BOOLEEN</selection>
+			<corps>Decls $finDefVar debut Insts fin</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Decls</gauche>
+		<pd>
+			<selection>ENTIER BOOLEEN</selection>
+			<corps>Decl SuiteDecls</corps>
+		</pd>
+		<pd>
+			<selection>DEBUT</selection>
+			<corps>vide</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>SuiteDecls</gauche>
+		<pd>
+			<selection>PT_VIRG</selection>
+			<corps>; Decls SuiteDecls</corps>
+		</pd>
+		<pd>
+			<selection>DEBUT</selection>
+			<corps>vide</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Decl</gauche>
+		<pd>
+			<selection>ENTIER</selection>
+			<corps>entier $defVarEnt idf Idents</corps>
+		</pd>
+		<pd>
+			<selection>BOOLEEN</selection>
+			<corps>
+			booleen $defVarBool idf Idents
+			</corps>
+		</pd>
+		<pd>
+			<selection>DEBUT</selection>
+			<corps>vide</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Idents</gauche>
+		<pd>
+			<selection>VIRG</selection>
+			<corps>
+			, $defVar idf Idents
+			</corps>
+		</pd>
+		<pd>
+			<selection>PT_VIRG DEBUT</selection>
+			<corps>vide</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Insts</gauche>
+		<pd>
+			<selection>IDF NBRE PAR_OUV NON LIRE ECRIRE SI</selection>
+			<corps>Instruction SuiteInsts</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>SuiteInsts</gauche>
+		<pd>
+			<selection>PT_VIRG</selection>
+			<corps>$neutraliser ; Insts</corps>
+		</pd>
+		<pd>
+			<selection>FIN FSI SINON</selection>
+			<corps>vide</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Instruction</gauche>
+		<pd>
+			<selection>IDF NBRE PAR_OUV NON SI</selection>
+			<corps>Exp</corps>
+		</pd>
+		<pd>
+			<selection>LIRE</selection>
+			<corps>lire $lire idf</corps>
+		</pd>
+		<pd>
+			<selection>ECRIRE</selection>
+			<corps>ecrire $ecrire idf</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Exp</gauche>
+		<pd>
+			<selection>IDF NBRE PAR_OUV NON SI</selection>
+			<corps>SansAff RExp</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>RExp</gauche>
+		<pd>
+			<selection>AFF</selection>
+			<corps>$opérandeGaucheAff := Exp $opérandeDroitAff</corps>
+		</pd>
+		<pd>
+			<selection>FIN PT_VIRG PAR_FER ALORS FSI SINON</selection>
+			<corps>vide</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>SansAff</gauche>
+		<pd>
+			<selection>IDF NBRE PAR_OUV NON SI</selection>
+			<corps>Disjonction RDisjonction</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>RDisjonction</gauche>
+		<pd>
+			<selection>OU</selection>
+			<corps>$opérandeGauche ou Disjonction $opérandeDroit RDisjonction</corps>
+		</pd>
+		<pd>
+			<selection>PAR_FER PT_VIRG FIN AFF ALORS FSI SINON</selection>
+			<corps>vide</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Disjonction</gauche>
+		<pd>
+			<selection>IDF NBRE PAR_OUV NON SI</selection>
+			<corps>Conjonction RConjonction</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>RConjonction</gauche>
+		<pd>
+			<selection>ET</selection>
+			<corps>$opérandeGauche et Conjonction $opérandeDroit RConjonction</corps>
+		</pd>
+		<pd>
+			<selection>OU PAR_FER PT_VIRG FIN AFF ALORS FSI SINON</selection>
+			<corps>vide</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Conjonction</gauche>
+		<pd>
+			<selection>IDF NBRE PAR_OUV NON SI</selection>
+			<corps>Relation RRelation</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>RRelation</gauche>
+		<pd>
+			<selection>INF</selection>
+			<corps>$opérandeGauche &lt; Relation $opérandeDroit RRelation</corps>
+		</pd>
+		<pd>
+			<selection>EG</selection>
+			<corps>$opérandeGauche = Relation $opérandeDroit RRelation</corps>
+		</pd>
+		<pd>
+			<selection>OU ET PAR_FER PT_VIRG FIN AFF ALORS FSI SINON</selection>
+			<corps>vide</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Relation</gauche>
+		<pd>
+			<selection>IDF NBRE PAR_OUV NON SI</selection>
+			<corps>Terme RTerme</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>RTerme</gauche>
+		<pd>
+			<selection>PLUS</selection>
+			<corps>$opérandeGauche + Terme $opérandeDroit RTerme</corps>
+		</pd>
+		<pd>
+			<selection>MOINS</selection>
+			<corps>$opérandeGauche - Terme $opérandeDroit RTerme</corps>
+		</pd>
+		<pd>
+			<selection>OU ET INF EG PAR_FER PT_VIRG FIN AFF ALORS FSI SINON</selection>
+			<corps>vide</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Terme</gauche>
+		<pd>
+			<selection>IDF NBRE PAR_OUV NON SI</selection>
+			<corps>Facteur RFacteur</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>RFacteur</gauche>
+		<pd>
+			<selection>MULT</selection>
+			<corps>$opérandeGauche * Facteur $opérandeDroit RFacteur</corps>
+		</pd>
+		<pd>
+			<selection>DIV</selection>
+			<corps>$opérandeGauche / Facteur $opérandeDroit RFacteur</corps>
+		</pd>
+		<pd>
+			<selection>OU ET INF EG PLUS MOINS PAR_FER PT_VIRG FIN AFF ALORS FSI SINON</selection>
+			<corps>vide</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Facteur</gauche>
+		<pd>
+			<selection>NON</selection>
+			<corps>$opérandeGauche non Facteur $opérandeDroit</corps>
+		</pd>
+		<pd>
+			<selection>IDF NBRE PAR_OUV SI</selection>
+			<corps>Primaire</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>Primaire</gauche>
+		<pd>
+			<selection>IDF</selection>
+			<corps>$var idf</corps>
+		</pd>
+		<pd>
+			<selection>NBRE</selection>
+			<corps>$nbre nbre</corps>
+		</pd>
+		<pd>
+			<selection>PAR_OUV</selection>
+			<corps>( Exp )</corps>
+		</pd>
+		<pd>
+			<selection>SI</selection>
+			<corps>si Exp $finCondition alors Insts RPrimaire fsi</corps>
+		</pd>
+	</regle>
+	<regle>
+		<gauche>RPrimaire</gauche>
+		<pd>
+			<selection>SINON</selection>
+			<corps>$finAlors sinon Insts $finSinon</corps>
+		</pd>
+			<pd>
+			<selection>FSI</selection>
+			<corps>$fsiSansSinon vide</corps>
+		</pd>
+		
+	</regle>	
+</grammaire>

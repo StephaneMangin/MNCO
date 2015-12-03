@@ -1,0 +1,1194 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<g style="fill-rule:nonzero;clip-rule:nonzero;stroke-miterlimit:4; font-family:ArialMT;font-size:12;;fill:#FFFFD0;">
+<rect x="16" y="12" width="34.1375" height="16" stroke="black"/>
+<?xmlizer tab="0" ligne="0" xMax="74.1375" yMax="44"?>
+<text x="20" y="24" style="stroke:none;;fill:black;">Prog</text>
+<?xmlizer tab="1" ligne="1" xMax="70.46000000000001" yMax="64"?>
+<text x="40" y="44" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M36,40h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M26,40v-12" stroke="black"/>
+<rect x="36" y="52" width="40.595000000000006" height="16" stroke="black"/>
+<?xmlizer tab="1" ligne="2" xMax="100.595" yMax="84"?>
+<text x="40" y="64" style="stroke:none;;fill:black;">Decls</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M36,60h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M26,60v-32" stroke="black"/>
+<?xmlizer tab="2" ligne="3" xMax="90.46000000000001" yMax="104"?>
+<text x="60" y="84" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M56,80h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M46,80v-12" stroke="black"/>
+<rect x="56" y="92" width="34.445" height="16" stroke="black"/>
+<?xmlizer tab="2" ligne="4" xMax="114.445" yMax="124"?>
+<text x="60" y="104" style="stroke:none;;fill:black;">Decl</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M56,100h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M46,100v-32" stroke="black"/>
+<?xmlizer tab="3" ligne="5" xMax="240.84" yMax="144"?>
+<text x="80" y="124" style="stroke:none;;fill:black;">[ENTIER, entier] [IDF, a]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,120h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,120v-12" stroke="black"/>
+<rect x="76" y="132" width="41.21" height="16" stroke="black"/>
+<?xmlizer tab="3" ligne="6" xMax="141.21" yMax="164"?>
+<text x="80" y="144" style="stroke:none;;fill:black;">Idents</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,140h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,140v-32" stroke="black"/>
+<?xmlizer tab="4" ligne="7" xMax="220.865" yMax="184"?>
+<text x="100" y="164" style="stroke:none;;fill:black;">[VIRG, ,] [IDF, b]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,160h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,160v-12" stroke="black"/>
+<rect x="96" y="172" width="41.21" height="16" stroke="black"/>
+<?xmlizer tab="4" ligne="8" xMax="161.21" yMax="204"?>
+<text x="100" y="184" style="stroke:none;;fill:black;">Idents</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,180h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,180v-32" stroke="black"/>
+<?xmlizer tab="5" ligne="9" xMax="150.45999999999998" yMax="224"?>
+<text x="120" y="204" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,200h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,200v-12" stroke="black"/>
+<?xmlizer tab="4" ligne="10" xMax="130.45999999999998" yMax="244"?>
+<text x="100" y="224" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,220h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,220v-72" stroke="black"/>
+<?xmlizer tab="3" ligne="11" xMax="110.46" yMax="264"?>
+<text x="80" y="244" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,240h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,240v-132" stroke="black"/>
+<?xmlizer tab="2" ligne="12" xMax="90.46000000000001" yMax="284"?>
+<text x="60" y="264" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M56,260h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M46,260v-192" stroke="black"/>
+<rect x="56" y="272" width="66.7325" height="16" stroke="black"/>
+<?xmlizer tab="2" ligne="13" xMax="146.73250000000002" yMax="304"?>
+<text x="60" y="284" style="stroke:none;;fill:black;">SuiteDecls</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M56,280h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M46,280v-212" stroke="black"/>
+<?xmlizer tab="3" ligne="14" xMax="176.265" yMax="324"?>
+<text x="80" y="304" style="stroke:none;;fill:black;">[PT_VIRG, ;]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,300h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,300v-12" stroke="black"/>
+<rect x="76" y="312" width="40.595000000000006" height="16" stroke="black"/>
+<?xmlizer tab="3" ligne="15" xMax="140.595" yMax="344"?>
+<text x="80" y="324" style="stroke:none;;fill:black;">Decls</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,320h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,320v-32" stroke="black"/>
+<?xmlizer tab="4" ligne="16" xMax="130.45999999999998" yMax="364"?>
+<text x="100" y="344" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,340h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,340v-12" stroke="black"/>
+<?xmlizer tab="3" ligne="17" xMax="110.46" yMax="384"?>
+<text x="80" y="364" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,360h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,360v-72" stroke="black"/>
+<rect x="76" y="372" width="66.7325" height="16" stroke="black"/>
+<?xmlizer tab="3" ligne="18" xMax="166.73250000000002" yMax="404"?>
+<text x="80" y="384" style="stroke:none;;fill:black;">SuiteDecls</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,380h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,380v-92" stroke="black"/>
+<?xmlizer tab="4" ligne="19" xMax="130.45999999999998" yMax="424"?>
+<text x="100" y="404" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,400h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,400v-12" stroke="black"/>
+<?xmlizer tab="3" ligne="20" xMax="110.46" yMax="444"?>
+<text x="80" y="424" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,420h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,420v-132" stroke="black"/>
+<?xmlizer tab="2" ligne="21" xMax="90.46000000000001" yMax="464"?>
+<text x="60" y="444" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M56,440h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M46,440v-372" stroke="black"/>
+<?xmlizer tab="1" ligne="22" xMax="155.02249999999998" yMax="484"?>
+<text x="40" y="464" style="stroke:none;;fill:black;">[DEBUT, debut]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M36,460h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M26,460v-432" stroke="black"/>
+<rect x="36" y="472" width="35.06" height="16" stroke="black"/>
+<?xmlizer tab="1" ligne="23" xMax="95.06" yMax="504"?>
+<text x="40" y="484" style="stroke:none;;fill:black;">Insts</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M36,480h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M26,480v-452" stroke="black"/>
+<?xmlizer tab="2" ligne="24" xMax="90.46000000000001" yMax="524"?>
+<text x="60" y="504" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M56,500h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M46,500v-12" stroke="black"/>
+<rect x="56" y="512" width="63.349999999999994" height="16" stroke="black"/>
+<?xmlizer tab="2" ligne="25" xMax="143.35" yMax="544"?>
+<text x="60" y="524" style="stroke:none;;fill:black;">Instruction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M56,520h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M46,520v-32" stroke="black"/>
+<?xmlizer tab="3" ligne="26" xMax="110.46" yMax="564"?>
+<text x="80" y="544" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,540h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,540v-12" stroke="black"/>
+<rect x="76" y="552" width="30.4475" height="16" stroke="black"/>
+<?xmlizer tab="3" ligne="27" xMax="130.4475" yMax="584"?>
+<text x="80" y="564" style="stroke:none;;fill:black;">Exp</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,560h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,560v-32" stroke="black"/>
+<?xmlizer tab="4" ligne="28" xMax="130.45999999999998" yMax="604"?>
+<text x="100" y="584" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,580h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,580v-12" stroke="black"/>
+<rect x="96" y="592" width="51.665" height="16" stroke="black"/>
+<?xmlizer tab="4" ligne="29" xMax="171.665" yMax="624"?>
+<text x="100" y="604" style="stroke:none;;fill:black;">SansAff</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,600h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,600v-32" stroke="black"/>
+<?xmlizer tab="5" ligne="30" xMax="150.45999999999998" yMax="644"?>
+<text x="120" y="624" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,620h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,620v-12" stroke="black"/>
+<rect x="116" y="632" width="71.345" height="16" stroke="black"/>
+<?xmlizer tab="5" ligne="31" xMax="211.345" yMax="664"?>
+<text x="120" y="644" style="stroke:none;;fill:black;">Disjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,640h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,640v-32" stroke="black"/>
+<?xmlizer tab="6" ligne="32" xMax="170.46" yMax="684"?>
+<text x="140" y="664" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,660h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,660v-12" stroke="black"/>
+<rect x="136" y="672" width="73.4975" height="16" stroke="black"/>
+<?xmlizer tab="6" ligne="33" xMax="233.4975" yMax="704"?>
+<text x="140" y="684" style="stroke:none;;fill:black;">Conjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,680h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,680v-32" stroke="black"/>
+<?xmlizer tab="7" ligne="34" xMax="190.46" yMax="724"?>
+<text x="160" y="704" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,700h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,700v-12" stroke="black"/>
+<rect x="156" y="712" width="51.3575" height="16" stroke="black"/>
+<?xmlizer tab="7" ligne="35" xMax="231.35750000000002" yMax="744"?>
+<text x="160" y="724" style="stroke:none;;fill:black;">Relation</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,720h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,720v-32" stroke="black"/>
+<?xmlizer tab="8" ligne="36" xMax="210.46" yMax="764"?>
+<text x="180" y="744" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,740h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,740v-12" stroke="black"/>
+<rect x="176" y="752" width="43.362500000000004" height="16" stroke="black"/>
+<?xmlizer tab="8" ligne="37" xMax="243.3625" yMax="784"?>
+<text x="180" y="764" style="stroke:none;;fill:black;">Terme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,760h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,760v-32" stroke="black"/>
+<?xmlizer tab="9" ligne="38" xMax="230.46" yMax="804"?>
+<text x="200" y="784" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,780h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,780v-12" stroke="black"/>
+<rect x="196" y="792" width="50.127500000000005" height="16" stroke="black"/>
+<?xmlizer tab="9" ligne="39" xMax="270.1275" yMax="824"?>
+<text x="200" y="804" style="stroke:none;;fill:black;">Facteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,800h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,800v-32" stroke="black"/>
+<?xmlizer tab="10" ligne="40" xMax="250.46" yMax="844"?>
+<text x="220" y="824" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,820h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,820v-12" stroke="black"/>
+<rect x="216" y="832" width="51.972500000000004" height="16" stroke="black"/>
+<?xmlizer tab="10" ligne="41" xMax="291.9725" yMax="864"?>
+<text x="220" y="844" style="stroke:none;;fill:black;">Primaire</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,840h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,840v-32" stroke="black"/>
+<?xmlizer tab="11" ligne="42" xMax="310.7425" yMax="884"?>
+<text x="240" y="864" style="stroke:none;;fill:black;">[IDF, a]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,860h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,860v-12" stroke="black"/>
+<?xmlizer tab="10" ligne="43" xMax="250.46" yMax="904"?>
+<text x="220" y="884" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,880h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,880v-72" stroke="black"/>
+<?xmlizer tab="9" ligne="44" xMax="230.46" yMax="924"?>
+<text x="200" y="904" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,900h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,900v-132" stroke="black"/>
+<rect x="196" y="912" width="57.815000000000005" height="16" stroke="black"/>
+<?xmlizer tab="9" ligne="45" xMax="277.815" yMax="944"?>
+<text x="200" y="924" style="stroke:none;;fill:black;">RFacteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,920h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,920v-152" stroke="black"/>
+<?xmlizer tab="10" ligne="46" xMax="250.46" yMax="964"?>
+<text x="220" y="944" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,940h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,940v-12" stroke="black"/>
+<?xmlizer tab="9" ligne="47" xMax="230.46" yMax="984"?>
+<text x="200" y="964" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,960h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,960v-192" stroke="black"/>
+<?xmlizer tab="8" ligne="48" xMax="210.46" yMax="1004"?>
+<text x="180" y="984" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,980h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,980v-252" stroke="black"/>
+<rect x="176" y="992" width="51.050000000000004" height="16" stroke="black"/>
+<?xmlizer tab="8" ligne="49" xMax="251.05" yMax="1024"?>
+<text x="180" y="1004" style="stroke:none;;fill:black;">RTerme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,1000h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,1000v-272" stroke="black"/>
+<?xmlizer tab="9" ligne="50" xMax="230.46" yMax="1044"?>
+<text x="200" y="1024" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,1020h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,1020v-12" stroke="black"/>
+<?xmlizer tab="8" ligne="51" xMax="210.46" yMax="1064"?>
+<text x="180" y="1044" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,1040h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,1040v-312" stroke="black"/>
+<?xmlizer tab="7" ligne="52" xMax="190.46" yMax="1084"?>
+<text x="160" y="1064" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,1060h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,1060v-372" stroke="black"/>
+<rect x="156" y="1072" width="59.045" height="16" stroke="black"/>
+<?xmlizer tab="7" ligne="53" xMax="239.04500000000002" yMax="1104"?>
+<text x="160" y="1084" style="stroke:none;;fill:black;">RRelation</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,1080h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,1080v-392" stroke="black"/>
+<?xmlizer tab="8" ligne="54" xMax="210.46" yMax="1124"?>
+<text x="180" y="1104" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,1100h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,1100v-12" stroke="black"/>
+<?xmlizer tab="7" ligne="55" xMax="190.46" yMax="1144"?>
+<text x="160" y="1124" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,1120h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,1120v-432" stroke="black"/>
+<?xmlizer tab="6" ligne="56" xMax="170.46" yMax="1164"?>
+<text x="140" y="1144" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,1140h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,1140v-492" stroke="black"/>
+<rect x="136" y="1152" width="81.185" height="16" stroke="black"/>
+<?xmlizer tab="6" ligne="57" xMax="241.185" yMax="1184"?>
+<text x="140" y="1164" style="stroke:none;;fill:black;">RConjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,1160h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,1160v-512" stroke="black"/>
+<?xmlizer tab="7" ligne="58" xMax="190.46" yMax="1204"?>
+<text x="160" y="1184" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,1180h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,1180v-12" stroke="black"/>
+<?xmlizer tab="6" ligne="59" xMax="170.46" yMax="1224"?>
+<text x="140" y="1204" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,1200h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,1200v-552" stroke="black"/>
+<?xmlizer tab="5" ligne="60" xMax="150.45999999999998" yMax="1244"?>
+<text x="120" y="1224" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,1220h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,1220v-612" stroke="black"/>
+<rect x="116" y="1232" width="79.0325" height="16" stroke="black"/>
+<?xmlizer tab="5" ligne="61" xMax="219.0325" yMax="1264"?>
+<text x="120" y="1244" style="stroke:none;;fill:black;">RDisjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,1240h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,1240v-632" stroke="black"/>
+<?xmlizer tab="6" ligne="62" xMax="170.46" yMax="1284"?>
+<text x="140" y="1264" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,1260h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,1260v-12" stroke="black"/>
+<?xmlizer tab="5" ligne="63" xMax="150.45999999999998" yMax="1304"?>
+<text x="120" y="1284" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,1280h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,1280v-672" stroke="black"/>
+<?xmlizer tab="4" ligne="64" xMax="130.45999999999998" yMax="1324"?>
+<text x="100" y="1304" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,1300h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,1300v-732" stroke="black"/>
+<rect x="96" y="1312" width="38.135000000000005" height="16" stroke="black"/>
+<?xmlizer tab="4" ligne="65" xMax="158.135" yMax="1344"?>
+<text x="100" y="1324" style="stroke:none;;fill:black;">RExp</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,1320h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,1320v-752" stroke="black"/>
+<?xmlizer tab="5" ligne="66" xMax="196.8925" yMax="1364"?>
+<text x="120" y="1344" style="stroke:none;;fill:black;">[AFF, :=]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,1340h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,1340v-12" stroke="black"/>
+<rect x="116" y="1352" width="30.4475" height="16" stroke="black"/>
+<?xmlizer tab="5" ligne="67" xMax="170.4475" yMax="1384"?>
+<text x="120" y="1364" style="stroke:none;;fill:black;">Exp</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,1360h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,1360v-32" stroke="black"/>
+<?xmlizer tab="6" ligne="68" xMax="170.46" yMax="1404"?>
+<text x="140" y="1384" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,1380h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,1380v-12" stroke="black"/>
+<rect x="136" y="1392" width="51.665" height="16" stroke="black"/>
+<?xmlizer tab="6" ligne="69" xMax="211.665" yMax="1424"?>
+<text x="140" y="1404" style="stroke:none;;fill:black;">SansAff</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,1400h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,1400v-32" stroke="black"/>
+<?xmlizer tab="7" ligne="70" xMax="190.46" yMax="1444"?>
+<text x="160" y="1424" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,1420h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,1420v-12" stroke="black"/>
+<rect x="156" y="1432" width="71.345" height="16" stroke="black"/>
+<?xmlizer tab="7" ligne="71" xMax="251.345" yMax="1464"?>
+<text x="160" y="1444" style="stroke:none;;fill:black;">Disjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,1440h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,1440v-32" stroke="black"/>
+<?xmlizer tab="8" ligne="72" xMax="210.46" yMax="1484"?>
+<text x="180" y="1464" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,1460h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,1460v-12" stroke="black"/>
+<rect x="176" y="1472" width="73.4975" height="16" stroke="black"/>
+<?xmlizer tab="8" ligne="73" xMax="273.4975" yMax="1504"?>
+<text x="180" y="1484" style="stroke:none;;fill:black;">Conjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,1480h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,1480v-32" stroke="black"/>
+<?xmlizer tab="9" ligne="74" xMax="230.46" yMax="1524"?>
+<text x="200" y="1504" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,1500h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,1500v-12" stroke="black"/>
+<rect x="196" y="1512" width="51.3575" height="16" stroke="black"/>
+<?xmlizer tab="9" ligne="75" xMax="271.3575" yMax="1544"?>
+<text x="200" y="1524" style="stroke:none;;fill:black;">Relation</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,1520h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,1520v-32" stroke="black"/>
+<?xmlizer tab="10" ligne="76" xMax="250.46" yMax="1564"?>
+<text x="220" y="1544" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,1540h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,1540v-12" stroke="black"/>
+<rect x="216" y="1552" width="43.362500000000004" height="16" stroke="black"/>
+<?xmlizer tab="10" ligne="77" xMax="283.3625" yMax="1584"?>
+<text x="220" y="1564" style="stroke:none;;fill:black;">Terme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,1560h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,1560v-32" stroke="black"/>
+<?xmlizer tab="11" ligne="78" xMax="270.46000000000004" yMax="1604"?>
+<text x="240" y="1584" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,1580h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,1580v-12" stroke="black"/>
+<rect x="236" y="1592" width="50.127500000000005" height="16" stroke="black"/>
+<?xmlizer tab="11" ligne="79" xMax="310.1275" yMax="1624"?>
+<text x="240" y="1604" style="stroke:none;;fill:black;">Facteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,1600h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,1600v-32" stroke="black"/>
+<?xmlizer tab="12" ligne="80" xMax="290.46" yMax="1644"?>
+<text x="260" y="1624" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,1620h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,1620v-12" stroke="black"/>
+<rect x="256" y="1632" width="51.972500000000004" height="16" stroke="black"/>
+<?xmlizer tab="12" ligne="81" xMax="331.9725" yMax="1664"?>
+<text x="260" y="1644" style="stroke:none;;fill:black;">Primaire</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,1640h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,1640v-32" stroke="black"/>
+<?xmlizer tab="13" ligne="82" xMax="362.12" yMax="1684"?>
+<text x="280" y="1664" style="stroke:none;;fill:black;">[NBRE, 1]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,1660h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,1660v-12" stroke="black"/>
+<?xmlizer tab="12" ligne="83" xMax="290.46" yMax="1704"?>
+<text x="260" y="1684" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,1680h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,1680v-72" stroke="black"/>
+<?xmlizer tab="11" ligne="84" xMax="270.46000000000004" yMax="1724"?>
+<text x="240" y="1704" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,1700h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,1700v-132" stroke="black"/>
+<rect x="236" y="1712" width="57.815000000000005" height="16" stroke="black"/>
+<?xmlizer tab="11" ligne="85" xMax="317.815" yMax="1744"?>
+<text x="240" y="1724" style="stroke:none;;fill:black;">RFacteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,1720h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,1720v-152" stroke="black"/>
+<?xmlizer tab="12" ligne="86" xMax="290.46" yMax="1764"?>
+<text x="260" y="1744" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,1740h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,1740v-12" stroke="black"/>
+<?xmlizer tab="11" ligne="87" xMax="270.46000000000004" yMax="1784"?>
+<text x="240" y="1764" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,1760h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,1760v-192" stroke="black"/>
+<?xmlizer tab="10" ligne="88" xMax="250.46" yMax="1804"?>
+<text x="220" y="1784" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,1780h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,1780v-252" stroke="black"/>
+<rect x="216" y="1792" width="51.050000000000004" height="16" stroke="black"/>
+<?xmlizer tab="10" ligne="89" xMax="291.05" yMax="1824"?>
+<text x="220" y="1804" style="stroke:none;;fill:black;">RTerme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,1800h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,1800v-272" stroke="black"/>
+<?xmlizer tab="11" ligne="90" xMax="270.46000000000004" yMax="1844"?>
+<text x="240" y="1824" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,1820h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,1820v-12" stroke="black"/>
+<?xmlizer tab="10" ligne="91" xMax="250.46" yMax="1864"?>
+<text x="220" y="1844" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,1840h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,1840v-312" stroke="black"/>
+<?xmlizer tab="9" ligne="92" xMax="230.46" yMax="1884"?>
+<text x="200" y="1864" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,1860h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,1860v-372" stroke="black"/>
+<rect x="196" y="1872" width="59.045" height="16" stroke="black"/>
+<?xmlizer tab="9" ligne="93" xMax="279.045" yMax="1904"?>
+<text x="200" y="1884" style="stroke:none;;fill:black;">RRelation</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,1880h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,1880v-392" stroke="black"/>
+<?xmlizer tab="10" ligne="94" xMax="250.46" yMax="1924"?>
+<text x="220" y="1904" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,1900h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,1900v-12" stroke="black"/>
+<?xmlizer tab="9" ligne="95" xMax="230.46" yMax="1944"?>
+<text x="200" y="1924" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,1920h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,1920v-432" stroke="black"/>
+<?xmlizer tab="8" ligne="96" xMax="210.46" yMax="1964"?>
+<text x="180" y="1944" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,1940h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,1940v-492" stroke="black"/>
+<rect x="176" y="1952" width="81.185" height="16" stroke="black"/>
+<?xmlizer tab="8" ligne="97" xMax="281.185" yMax="1984"?>
+<text x="180" y="1964" style="stroke:none;;fill:black;">RConjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,1960h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,1960v-512" stroke="black"/>
+<?xmlizer tab="9" ligne="98" xMax="230.46" yMax="2004"?>
+<text x="200" y="1984" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,1980h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,1980v-12" stroke="black"/>
+<?xmlizer tab="8" ligne="99" xMax="210.46" yMax="2024"?>
+<text x="180" y="2004" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,2000h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,2000v-552" stroke="black"/>
+<?xmlizer tab="7" ligne="100" xMax="190.46" yMax="2044"?>
+<text x="160" y="2024" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,2020h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,2020v-612" stroke="black"/>
+<rect x="156" y="2032" width="79.0325" height="16" stroke="black"/>
+<?xmlizer tab="7" ligne="101" xMax="259.0325" yMax="2064"?>
+<text x="160" y="2044" style="stroke:none;;fill:black;">RDisjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,2040h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,2040v-632" stroke="black"/>
+<?xmlizer tab="8" ligne="102" xMax="210.46" yMax="2084"?>
+<text x="180" y="2064" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,2060h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,2060v-12" stroke="black"/>
+<?xmlizer tab="7" ligne="103" xMax="190.46" yMax="2104"?>
+<text x="160" y="2084" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,2080h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,2080v-672" stroke="black"/>
+<?xmlizer tab="6" ligne="104" xMax="170.46" yMax="2124"?>
+<text x="140" y="2104" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,2100h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,2100v-732" stroke="black"/>
+<rect x="136" y="2112" width="38.135000000000005" height="16" stroke="black"/>
+<?xmlizer tab="6" ligne="105" xMax="198.135" yMax="2144"?>
+<text x="140" y="2124" style="stroke:none;;fill:black;">RExp</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,2120h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,2120v-752" stroke="black"/>
+<?xmlizer tab="7" ligne="106" xMax="190.46" yMax="2164"?>
+<text x="160" y="2144" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,2140h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,2140v-12" stroke="black"/>
+<?xmlizer tab="6" ligne="107" xMax="170.46" yMax="2184"?>
+<text x="140" y="2164" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,2160h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,2160v-792" stroke="black"/>
+<?xmlizer tab="5" ligne="108" xMax="150.45999999999998" yMax="2204"?>
+<text x="120" y="2184" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,2180h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,2180v-852" stroke="black"/>
+<?xmlizer tab="4" ligne="109" xMax="130.45999999999998" yMax="2224"?>
+<text x="100" y="2204" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,2200h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,2200v-1632" stroke="black"/>
+<?xmlizer tab="3" ligne="110" xMax="110.46" yMax="2244"?>
+<text x="80" y="2224" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,2220h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,2220v-1692" stroke="black"/>
+<?xmlizer tab="2" ligne="111" xMax="90.46000000000001" yMax="2264"?>
+<text x="60" y="2244" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M56,2240h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M46,2240v-1752" stroke="black"/>
+<rect x="56" y="2252" width="61.1975" height="16" stroke="black"/>
+<?xmlizer tab="2" ligne="112" xMax="141.1975" yMax="2284"?>
+<text x="60" y="2264" style="stroke:none;;fill:black;">SuiteInsts</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M56,2260h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M46,2260v-1772" stroke="black"/>
+<?xmlizer tab="3" ligne="113" xMax="176.265" yMax="2304"?>
+<text x="80" y="2284" style="stroke:none;;fill:black;">[PT_VIRG, ;]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,2280h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,2280v-12" stroke="black"/>
+<rect x="76" y="2292" width="35.06" height="16" stroke="black"/>
+<?xmlizer tab="3" ligne="114" xMax="135.06" yMax="2324"?>
+<text x="80" y="2304" style="stroke:none;;fill:black;">Insts</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,2300h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,2300v-32" stroke="black"/>
+<?xmlizer tab="4" ligne="115" xMax="130.45999999999998" yMax="2344"?>
+<text x="100" y="2324" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,2320h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,2320v-12" stroke="black"/>
+<rect x="96" y="2332" width="63.349999999999994" height="16" stroke="black"/>
+<?xmlizer tab="4" ligne="116" xMax="183.35" yMax="2364"?>
+<text x="100" y="2344" style="stroke:none;;fill:black;">Instruction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,2340h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,2340v-32" stroke="black"/>
+<?xmlizer tab="5" ligne="117" xMax="150.45999999999998" yMax="2384"?>
+<text x="120" y="2364" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,2360h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,2360v-12" stroke="black"/>
+<rect x="116" y="2372" width="30.4475" height="16" stroke="black"/>
+<?xmlizer tab="5" ligne="118" xMax="170.4475" yMax="2404"?>
+<text x="120" y="2384" style="stroke:none;;fill:black;">Exp</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,2380h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,2380v-32" stroke="black"/>
+<?xmlizer tab="6" ligne="119" xMax="170.46" yMax="2424"?>
+<text x="140" y="2404" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,2400h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,2400v-12" stroke="black"/>
+<rect x="136" y="2412" width="51.665" height="16" stroke="black"/>
+<?xmlizer tab="6" ligne="120" xMax="211.665" yMax="2444"?>
+<text x="140" y="2424" style="stroke:none;;fill:black;">SansAff</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,2420h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,2420v-32" stroke="black"/>
+<?xmlizer tab="7" ligne="121" xMax="190.46" yMax="2464"?>
+<text x="160" y="2444" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,2440h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,2440v-12" stroke="black"/>
+<rect x="156" y="2452" width="71.345" height="16" stroke="black"/>
+<?xmlizer tab="7" ligne="122" xMax="251.345" yMax="2484"?>
+<text x="160" y="2464" style="stroke:none;;fill:black;">Disjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,2460h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,2460v-32" stroke="black"/>
+<?xmlizer tab="8" ligne="123" xMax="210.46" yMax="2504"?>
+<text x="180" y="2484" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,2480h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,2480v-12" stroke="black"/>
+<rect x="176" y="2492" width="73.4975" height="16" stroke="black"/>
+<?xmlizer tab="8" ligne="124" xMax="273.4975" yMax="2524"?>
+<text x="180" y="2504" style="stroke:none;;fill:black;">Conjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,2500h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,2500v-32" stroke="black"/>
+<?xmlizer tab="9" ligne="125" xMax="230.46" yMax="2544"?>
+<text x="200" y="2524" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,2520h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,2520v-12" stroke="black"/>
+<rect x="196" y="2532" width="51.3575" height="16" stroke="black"/>
+<?xmlizer tab="9" ligne="126" xMax="271.3575" yMax="2564"?>
+<text x="200" y="2544" style="stroke:none;;fill:black;">Relation</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,2540h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,2540v-32" stroke="black"/>
+<?xmlizer tab="10" ligne="127" xMax="250.46" yMax="2584"?>
+<text x="220" y="2564" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,2560h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,2560v-12" stroke="black"/>
+<rect x="216" y="2572" width="43.362500000000004" height="16" stroke="black"/>
+<?xmlizer tab="10" ligne="128" xMax="283.3625" yMax="2604"?>
+<text x="220" y="2584" style="stroke:none;;fill:black;">Terme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,2580h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,2580v-32" stroke="black"/>
+<?xmlizer tab="11" ligne="129" xMax="270.46000000000004" yMax="2624"?>
+<text x="240" y="2604" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,2600h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,2600v-12" stroke="black"/>
+<rect x="236" y="2612" width="50.127500000000005" height="16" stroke="black"/>
+<?xmlizer tab="11" ligne="130" xMax="310.1275" yMax="2644"?>
+<text x="240" y="2624" style="stroke:none;;fill:black;">Facteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,2620h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,2620v-32" stroke="black"/>
+<?xmlizer tab="12" ligne="131" xMax="290.46" yMax="2664"?>
+<text x="260" y="2644" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,2640h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,2640v-12" stroke="black"/>
+<rect x="256" y="2652" width="51.972500000000004" height="16" stroke="black"/>
+<?xmlizer tab="12" ligne="132" xMax="331.9725" yMax="2684"?>
+<text x="260" y="2664" style="stroke:none;;fill:black;">Primaire</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,2660h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,2660v-32" stroke="black"/>
+<?xmlizer tab="13" ligne="133" xMax="350.7425" yMax="2704"?>
+<text x="280" y="2684" style="stroke:none;;fill:black;">[IDF, b]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,2680h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,2680v-12" stroke="black"/>
+<?xmlizer tab="12" ligne="134" xMax="290.46" yMax="2724"?>
+<text x="260" y="2704" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,2700h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,2700v-72" stroke="black"/>
+<?xmlizer tab="11" ligne="135" xMax="270.46000000000004" yMax="2744"?>
+<text x="240" y="2724" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,2720h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,2720v-132" stroke="black"/>
+<rect x="236" y="2732" width="57.815000000000005" height="16" stroke="black"/>
+<?xmlizer tab="11" ligne="136" xMax="317.815" yMax="2764"?>
+<text x="240" y="2744" style="stroke:none;;fill:black;">RFacteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,2740h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,2740v-152" stroke="black"/>
+<?xmlizer tab="12" ligne="137" xMax="290.46" yMax="2784"?>
+<text x="260" y="2764" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,2760h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,2760v-12" stroke="black"/>
+<?xmlizer tab="11" ligne="138" xMax="270.46000000000004" yMax="2804"?>
+<text x="240" y="2784" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,2780h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,2780v-192" stroke="black"/>
+<?xmlizer tab="10" ligne="139" xMax="250.46" yMax="2824"?>
+<text x="220" y="2804" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,2800h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,2800v-252" stroke="black"/>
+<rect x="216" y="2812" width="51.050000000000004" height="16" stroke="black"/>
+<?xmlizer tab="10" ligne="140" xMax="291.05" yMax="2844"?>
+<text x="220" y="2824" style="stroke:none;;fill:black;">RTerme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,2820h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,2820v-272" stroke="black"/>
+<?xmlizer tab="11" ligne="141" xMax="270.46000000000004" yMax="2864"?>
+<text x="240" y="2844" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,2840h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,2840v-12" stroke="black"/>
+<?xmlizer tab="10" ligne="142" xMax="250.46" yMax="2884"?>
+<text x="220" y="2864" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,2860h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,2860v-312" stroke="black"/>
+<?xmlizer tab="9" ligne="143" xMax="230.46" yMax="2904"?>
+<text x="200" y="2884" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,2880h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,2880v-372" stroke="black"/>
+<rect x="196" y="2892" width="59.045" height="16" stroke="black"/>
+<?xmlizer tab="9" ligne="144" xMax="279.045" yMax="2924"?>
+<text x="200" y="2904" style="stroke:none;;fill:black;">RRelation</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,2900h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,2900v-392" stroke="black"/>
+<?xmlizer tab="10" ligne="145" xMax="250.46" yMax="2944"?>
+<text x="220" y="2924" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,2920h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,2920v-12" stroke="black"/>
+<?xmlizer tab="9" ligne="146" xMax="230.46" yMax="2964"?>
+<text x="200" y="2944" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,2940h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,2940v-432" stroke="black"/>
+<?xmlizer tab="8" ligne="147" xMax="210.46" yMax="2984"?>
+<text x="180" y="2964" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,2960h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,2960v-492" stroke="black"/>
+<rect x="176" y="2972" width="81.185" height="16" stroke="black"/>
+<?xmlizer tab="8" ligne="148" xMax="281.185" yMax="3004"?>
+<text x="180" y="2984" style="stroke:none;;fill:black;">RConjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,2980h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,2980v-512" stroke="black"/>
+<?xmlizer tab="9" ligne="149" xMax="230.46" yMax="3024"?>
+<text x="200" y="3004" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,3000h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,3000v-12" stroke="black"/>
+<?xmlizer tab="8" ligne="150" xMax="210.46" yMax="3044"?>
+<text x="180" y="3024" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,3020h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,3020v-552" stroke="black"/>
+<?xmlizer tab="7" ligne="151" xMax="190.46" yMax="3064"?>
+<text x="160" y="3044" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,3040h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,3040v-612" stroke="black"/>
+<rect x="156" y="3052" width="79.0325" height="16" stroke="black"/>
+<?xmlizer tab="7" ligne="152" xMax="259.0325" yMax="3084"?>
+<text x="160" y="3064" style="stroke:none;;fill:black;">RDisjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,3060h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,3060v-632" stroke="black"/>
+<?xmlizer tab="8" ligne="153" xMax="210.46" yMax="3104"?>
+<text x="180" y="3084" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,3080h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,3080v-12" stroke="black"/>
+<?xmlizer tab="7" ligne="154" xMax="190.46" yMax="3124"?>
+<text x="160" y="3104" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,3100h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,3100v-672" stroke="black"/>
+<?xmlizer tab="6" ligne="155" xMax="170.46" yMax="3144"?>
+<text x="140" y="3124" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,3120h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,3120v-732" stroke="black"/>
+<rect x="136" y="3132" width="38.135000000000005" height="16" stroke="black"/>
+<?xmlizer tab="6" ligne="156" xMax="198.135" yMax="3164"?>
+<text x="140" y="3144" style="stroke:none;;fill:black;">RExp</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,3140h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,3140v-752" stroke="black"/>
+<?xmlizer tab="7" ligne="157" xMax="236.8925" yMax="3184"?>
+<text x="160" y="3164" style="stroke:none;;fill:black;">[AFF, :=]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,3160h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,3160v-12" stroke="black"/>
+<rect x="156" y="3172" width="30.4475" height="16" stroke="black"/>
+<?xmlizer tab="7" ligne="158" xMax="210.4475" yMax="3204"?>
+<text x="160" y="3184" style="stroke:none;;fill:black;">Exp</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,3180h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,3180v-32" stroke="black"/>
+<?xmlizer tab="8" ligne="159" xMax="210.46" yMax="3224"?>
+<text x="180" y="3204" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,3200h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,3200v-12" stroke="black"/>
+<rect x="176" y="3212" width="51.665" height="16" stroke="black"/>
+<?xmlizer tab="8" ligne="160" xMax="251.665" yMax="3244"?>
+<text x="180" y="3224" style="stroke:none;;fill:black;">SansAff</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,3220h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,3220v-32" stroke="black"/>
+<?xmlizer tab="9" ligne="161" xMax="230.46" yMax="3264"?>
+<text x="200" y="3244" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,3240h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,3240v-12" stroke="black"/>
+<rect x="196" y="3252" width="71.345" height="16" stroke="black"/>
+<?xmlizer tab="9" ligne="162" xMax="291.345" yMax="3284"?>
+<text x="200" y="3264" style="stroke:none;;fill:black;">Disjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,3260h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,3260v-32" stroke="black"/>
+<?xmlizer tab="10" ligne="163" xMax="250.46" yMax="3304"?>
+<text x="220" y="3284" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,3280h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,3280v-12" stroke="black"/>
+<rect x="216" y="3292" width="73.4975" height="16" stroke="black"/>
+<?xmlizer tab="10" ligne="164" xMax="313.4975" yMax="3324"?>
+<text x="220" y="3304" style="stroke:none;;fill:black;">Conjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,3300h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,3300v-32" stroke="black"/>
+<?xmlizer tab="11" ligne="165" xMax="270.46000000000004" yMax="3344"?>
+<text x="240" y="3324" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,3320h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,3320v-12" stroke="black"/>
+<rect x="236" y="3332" width="51.3575" height="16" stroke="black"/>
+<?xmlizer tab="11" ligne="166" xMax="311.3575" yMax="3364"?>
+<text x="240" y="3344" style="stroke:none;;fill:black;">Relation</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,3340h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,3340v-32" stroke="black"/>
+<?xmlizer tab="12" ligne="167" xMax="290.46" yMax="3384"?>
+<text x="260" y="3364" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,3360h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,3360v-12" stroke="black"/>
+<rect x="256" y="3372" width="43.362500000000004" height="16" stroke="black"/>
+<?xmlizer tab="12" ligne="168" xMax="323.3625" yMax="3404"?>
+<text x="260" y="3384" style="stroke:none;;fill:black;">Terme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,3380h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,3380v-32" stroke="black"/>
+<?xmlizer tab="13" ligne="169" xMax="310.46" yMax="3424"?>
+<text x="280" y="3404" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,3400h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,3400v-12" stroke="black"/>
+<rect x="276" y="3412" width="50.127500000000005" height="16" stroke="black"/>
+<?xmlizer tab="13" ligne="170" xMax="350.1275" yMax="3444"?>
+<text x="280" y="3424" style="stroke:none;;fill:black;">Facteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,3420h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,3420v-32" stroke="black"/>
+<?xmlizer tab="14" ligne="171" xMax="330.46" yMax="3464"?>
+<text x="300" y="3444" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,3440h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,3440v-12" stroke="black"/>
+<rect x="296" y="3452" width="51.972500000000004" height="16" stroke="black"/>
+<?xmlizer tab="14" ligne="172" xMax="371.9725" yMax="3484"?>
+<text x="300" y="3464" style="stroke:none;;fill:black;">Primaire</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,3460h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,3460v-32" stroke="black"/>
+<?xmlizer tab="15" ligne="173" xMax="402.12" yMax="3504"?>
+<text x="320" y="3484" style="stroke:none;;fill:black;">[NBRE, 2]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M316,3480h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M306,3480v-12" stroke="black"/>
+<?xmlizer tab="14" ligne="174" xMax="330.46" yMax="3524"?>
+<text x="300" y="3504" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,3500h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,3500v-72" stroke="black"/>
+<?xmlizer tab="13" ligne="175" xMax="310.46" yMax="3544"?>
+<text x="280" y="3524" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,3520h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,3520v-132" stroke="black"/>
+<rect x="276" y="3532" width="57.815000000000005" height="16" stroke="black"/>
+<?xmlizer tab="13" ligne="176" xMax="357.815" yMax="3564"?>
+<text x="280" y="3544" style="stroke:none;;fill:black;">RFacteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,3540h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,3540v-152" stroke="black"/>
+<?xmlizer tab="14" ligne="177" xMax="330.46" yMax="3584"?>
+<text x="300" y="3564" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,3560h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,3560v-12" stroke="black"/>
+<?xmlizer tab="13" ligne="178" xMax="310.46" yMax="3604"?>
+<text x="280" y="3584" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,3580h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,3580v-192" stroke="black"/>
+<?xmlizer tab="12" ligne="179" xMax="290.46" yMax="3624"?>
+<text x="260" y="3604" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,3600h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,3600v-252" stroke="black"/>
+<rect x="256" y="3612" width="51.050000000000004" height="16" stroke="black"/>
+<?xmlizer tab="12" ligne="180" xMax="331.05" yMax="3644"?>
+<text x="260" y="3624" style="stroke:none;;fill:black;">RTerme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,3620h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,3620v-272" stroke="black"/>
+<?xmlizer tab="13" ligne="181" xMax="310.46" yMax="3664"?>
+<text x="280" y="3644" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,3640h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,3640v-12" stroke="black"/>
+<?xmlizer tab="12" ligne="182" xMax="290.46" yMax="3684"?>
+<text x="260" y="3664" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,3660h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,3660v-312" stroke="black"/>
+<?xmlizer tab="11" ligne="183" xMax="270.46000000000004" yMax="3704"?>
+<text x="240" y="3684" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,3680h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,3680v-372" stroke="black"/>
+<rect x="236" y="3692" width="59.045" height="16" stroke="black"/>
+<?xmlizer tab="11" ligne="184" xMax="319.045" yMax="3724"?>
+<text x="240" y="3704" style="stroke:none;;fill:black;">RRelation</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,3700h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,3700v-392" stroke="black"/>
+<?xmlizer tab="12" ligne="185" xMax="290.46" yMax="3744"?>
+<text x="260" y="3724" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,3720h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,3720v-12" stroke="black"/>
+<?xmlizer tab="11" ligne="186" xMax="270.46000000000004" yMax="3764"?>
+<text x="240" y="3744" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,3740h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,3740v-432" stroke="black"/>
+<?xmlizer tab="10" ligne="187" xMax="250.46" yMax="3784"?>
+<text x="220" y="3764" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,3760h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,3760v-492" stroke="black"/>
+<rect x="216" y="3772" width="81.185" height="16" stroke="black"/>
+<?xmlizer tab="10" ligne="188" xMax="321.185" yMax="3804"?>
+<text x="220" y="3784" style="stroke:none;;fill:black;">RConjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,3780h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,3780v-512" stroke="black"/>
+<?xmlizer tab="11" ligne="189" xMax="270.46000000000004" yMax="3824"?>
+<text x="240" y="3804" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,3800h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,3800v-12" stroke="black"/>
+<?xmlizer tab="10" ligne="190" xMax="250.46" yMax="3844"?>
+<text x="220" y="3824" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,3820h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,3820v-552" stroke="black"/>
+<?xmlizer tab="9" ligne="191" xMax="230.46" yMax="3864"?>
+<text x="200" y="3844" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,3840h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,3840v-612" stroke="black"/>
+<rect x="196" y="3852" width="79.0325" height="16" stroke="black"/>
+<?xmlizer tab="9" ligne="192" xMax="299.0325" yMax="3884"?>
+<text x="200" y="3864" style="stroke:none;;fill:black;">RDisjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,3860h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,3860v-632" stroke="black"/>
+<?xmlizer tab="10" ligne="193" xMax="250.46" yMax="3904"?>
+<text x="220" y="3884" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,3880h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,3880v-12" stroke="black"/>
+<?xmlizer tab="9" ligne="194" xMax="230.46" yMax="3924"?>
+<text x="200" y="3904" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,3900h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,3900v-672" stroke="black"/>
+<?xmlizer tab="8" ligne="195" xMax="210.46" yMax="3944"?>
+<text x="180" y="3924" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,3920h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,3920v-732" stroke="black"/>
+<rect x="176" y="3932" width="38.135000000000005" height="16" stroke="black"/>
+<?xmlizer tab="8" ligne="196" xMax="238.135" yMax="3964"?>
+<text x="180" y="3944" style="stroke:none;;fill:black;">RExp</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,3940h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,3940v-752" stroke="black"/>
+<?xmlizer tab="9" ligne="197" xMax="230.46" yMax="3984"?>
+<text x="200" y="3964" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,3960h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,3960v-12" stroke="black"/>
+<?xmlizer tab="8" ligne="198" xMax="210.46" yMax="4004"?>
+<text x="180" y="3984" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,3980h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,3980v-792" stroke="black"/>
+<?xmlizer tab="7" ligne="199" xMax="190.46" yMax="4024"?>
+<text x="160" y="4004" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,4000h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,4000v-852" stroke="black"/>
+<?xmlizer tab="6" ligne="200" xMax="170.46" yMax="4044"?>
+<text x="140" y="4024" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,4020h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,4020v-1632" stroke="black"/>
+<?xmlizer tab="5" ligne="201" xMax="150.45999999999998" yMax="4064"?>
+<text x="120" y="4044" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,4040h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,4040v-1692" stroke="black"/>
+<?xmlizer tab="4" ligne="202" xMax="130.45999999999998" yMax="4084"?>
+<text x="100" y="4064" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,4060h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,4060v-1752" stroke="black"/>
+<rect x="96" y="4072" width="61.1975" height="16" stroke="black"/>
+<?xmlizer tab="4" ligne="203" xMax="181.1975" yMax="4104"?>
+<text x="100" y="4084" style="stroke:none;;fill:black;">SuiteInsts</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,4080h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,4080v-1772" stroke="black"/>
+<?xmlizer tab="5" ligne="204" xMax="216.265" yMax="4124"?>
+<text x="120" y="4104" style="stroke:none;;fill:black;">[PT_VIRG, ;]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,4100h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,4100v-12" stroke="black"/>
+<rect x="116" y="4112" width="35.06" height="16" stroke="black"/>
+<?xmlizer tab="5" ligne="205" xMax="175.06" yMax="4144"?>
+<text x="120" y="4124" style="stroke:none;;fill:black;">Insts</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,4120h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,4120v-32" stroke="black"/>
+<?xmlizer tab="6" ligne="206" xMax="170.46" yMax="4164"?>
+<text x="140" y="4144" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,4140h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,4140v-12" stroke="black"/>
+<rect x="136" y="4152" width="63.349999999999994" height="16" stroke="black"/>
+<?xmlizer tab="6" ligne="207" xMax="223.35" yMax="4184"?>
+<text x="140" y="4164" style="stroke:none;;fill:black;">Instruction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,4160h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,4160v-32" stroke="black"/>
+<?xmlizer tab="7" ligne="208" xMax="190.46" yMax="4204"?>
+<text x="160" y="4184" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,4180h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,4180v-12" stroke="black"/>
+<rect x="156" y="4192" width="30.4475" height="16" stroke="black"/>
+<?xmlizer tab="7" ligne="209" xMax="210.4475" yMax="4224"?>
+<text x="160" y="4204" style="stroke:none;;fill:black;">Exp</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,4200h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,4200v-32" stroke="black"/>
+<?xmlizer tab="8" ligne="210" xMax="210.46" yMax="4244"?>
+<text x="180" y="4224" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,4220h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,4220v-12" stroke="black"/>
+<rect x="176" y="4232" width="51.665" height="16" stroke="black"/>
+<?xmlizer tab="8" ligne="211" xMax="251.665" yMax="4264"?>
+<text x="180" y="4244" style="stroke:none;;fill:black;">SansAff</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,4240h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,4240v-32" stroke="black"/>
+<?xmlizer tab="9" ligne="212" xMax="230.46" yMax="4284"?>
+<text x="200" y="4264" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,4260h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,4260v-12" stroke="black"/>
+<rect x="196" y="4272" width="71.345" height="16" stroke="black"/>
+<?xmlizer tab="9" ligne="213" xMax="291.345" yMax="4304"?>
+<text x="200" y="4284" style="stroke:none;;fill:black;">Disjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,4280h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,4280v-32" stroke="black"/>
+<?xmlizer tab="10" ligne="214" xMax="250.46" yMax="4324"?>
+<text x="220" y="4304" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,4300h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,4300v-12" stroke="black"/>
+<rect x="216" y="4312" width="73.4975" height="16" stroke="black"/>
+<?xmlizer tab="10" ligne="215" xMax="313.4975" yMax="4344"?>
+<text x="220" y="4324" style="stroke:none;;fill:black;">Conjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,4320h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,4320v-32" stroke="black"/>
+<?xmlizer tab="11" ligne="216" xMax="270.46000000000004" yMax="4364"?>
+<text x="240" y="4344" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,4340h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,4340v-12" stroke="black"/>
+<rect x="236" y="4352" width="51.3575" height="16" stroke="black"/>
+<?xmlizer tab="11" ligne="217" xMax="311.3575" yMax="4384"?>
+<text x="240" y="4364" style="stroke:none;;fill:black;">Relation</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,4360h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,4360v-32" stroke="black"/>
+<?xmlizer tab="12" ligne="218" xMax="290.46" yMax="4404"?>
+<text x="260" y="4384" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,4380h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,4380v-12" stroke="black"/>
+<rect x="256" y="4392" width="43.362500000000004" height="16" stroke="black"/>
+<?xmlizer tab="12" ligne="219" xMax="323.3625" yMax="4424"?>
+<text x="260" y="4404" style="stroke:none;;fill:black;">Terme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,4400h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,4400v-32" stroke="black"/>
+<?xmlizer tab="13" ligne="220" xMax="310.46" yMax="4444"?>
+<text x="280" y="4424" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,4420h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,4420v-12" stroke="black"/>
+<rect x="276" y="4432" width="50.127500000000005" height="16" stroke="black"/>
+<?xmlizer tab="13" ligne="221" xMax="350.1275" yMax="4464"?>
+<text x="280" y="4444" style="stroke:none;;fill:black;">Facteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,4440h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,4440v-32" stroke="black"/>
+<?xmlizer tab="14" ligne="222" xMax="330.46" yMax="4484"?>
+<text x="300" y="4464" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,4460h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,4460v-12" stroke="black"/>
+<rect x="296" y="4472" width="51.972500000000004" height="16" stroke="black"/>
+<?xmlizer tab="14" ligne="223" xMax="371.9725" yMax="4504"?>
+<text x="300" y="4484" style="stroke:none;;fill:black;">Primaire</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,4480h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,4480v-32" stroke="black"/>
+<?xmlizer tab="15" ligne="224" xMax="390.7425" yMax="4524"?>
+<text x="320" y="4504" style="stroke:none;;fill:black;">[IDF, a]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M316,4500h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M306,4500v-12" stroke="black"/>
+<?xmlizer tab="14" ligne="225" xMax="330.46" yMax="4544"?>
+<text x="300" y="4524" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,4520h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,4520v-72" stroke="black"/>
+<?xmlizer tab="13" ligne="226" xMax="310.46" yMax="4564"?>
+<text x="280" y="4544" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,4540h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,4540v-132" stroke="black"/>
+<rect x="276" y="4552" width="57.815000000000005" height="16" stroke="black"/>
+<?xmlizer tab="13" ligne="227" xMax="357.815" yMax="4584"?>
+<text x="280" y="4564" style="stroke:none;;fill:black;">RFacteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,4560h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,4560v-152" stroke="black"/>
+<?xmlizer tab="14" ligne="228" xMax="330.46" yMax="4604"?>
+<text x="300" y="4584" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,4580h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,4580v-12" stroke="black"/>
+<?xmlizer tab="13" ligne="229" xMax="310.46" yMax="4624"?>
+<text x="280" y="4604" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,4600h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,4600v-192" stroke="black"/>
+<?xmlizer tab="12" ligne="230" xMax="290.46" yMax="4644"?>
+<text x="260" y="4624" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,4620h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,4620v-252" stroke="black"/>
+<rect x="256" y="4632" width="51.050000000000004" height="16" stroke="black"/>
+<?xmlizer tab="12" ligne="231" xMax="331.05" yMax="4664"?>
+<text x="260" y="4644" style="stroke:none;;fill:black;">RTerme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,4640h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,4640v-272" stroke="black"/>
+<?xmlizer tab="13" ligne="232" xMax="363.6575" yMax="4684"?>
+<text x="280" y="4664" style="stroke:none;;fill:black;">[PLUS, +]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,4660h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,4660v-12" stroke="black"/>
+<rect x="276" y="4672" width="43.362500000000004" height="16" stroke="black"/>
+<?xmlizer tab="13" ligne="233" xMax="343.3625" yMax="4704"?>
+<text x="280" y="4684" style="stroke:none;;fill:black;">Terme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,4680h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,4680v-32" stroke="black"/>
+<?xmlizer tab="14" ligne="234" xMax="330.46" yMax="4724"?>
+<text x="300" y="4704" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,4700h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,4700v-12" stroke="black"/>
+<rect x="296" y="4712" width="50.127500000000005" height="16" stroke="black"/>
+<?xmlizer tab="14" ligne="235" xMax="370.1275" yMax="4744"?>
+<text x="300" y="4724" style="stroke:none;;fill:black;">Facteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,4720h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,4720v-32" stroke="black"/>
+<?xmlizer tab="15" ligne="236" xMax="350.46" yMax="4764"?>
+<text x="320" y="4744" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M316,4740h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M306,4740v-12" stroke="black"/>
+<rect x="316" y="4752" width="51.972500000000004" height="16" stroke="black"/>
+<?xmlizer tab="15" ligne="237" xMax="391.9725" yMax="4784"?>
+<text x="320" y="4764" style="stroke:none;;fill:black;">Primaire</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M316,4760h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M306,4760v-32" stroke="black"/>
+<?xmlizer tab="16" ligne="238" xMax="410.7425" yMax="4804"?>
+<text x="340" y="4784" style="stroke:none;;fill:black;">[IDF, b]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M336,4780h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M326,4780v-12" stroke="black"/>
+<?xmlizer tab="15" ligne="239" xMax="350.46" yMax="4824"?>
+<text x="320" y="4804" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M316,4800h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M306,4800v-72" stroke="black"/>
+<?xmlizer tab="14" ligne="240" xMax="330.46" yMax="4844"?>
+<text x="300" y="4824" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,4820h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,4820v-132" stroke="black"/>
+<rect x="296" y="4832" width="57.815000000000005" height="16" stroke="black"/>
+<?xmlizer tab="14" ligne="241" xMax="377.815" yMax="4864"?>
+<text x="300" y="4844" style="stroke:none;;fill:black;">RFacteur</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,4840h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,4840v-152" stroke="black"/>
+<?xmlizer tab="15" ligne="242" xMax="350.46" yMax="4884"?>
+<text x="320" y="4864" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M316,4860h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M306,4860v-12" stroke="black"/>
+<?xmlizer tab="14" ligne="243" xMax="330.46" yMax="4904"?>
+<text x="300" y="4884" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,4880h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,4880v-192" stroke="black"/>
+<?xmlizer tab="13" ligne="244" xMax="310.46" yMax="4924"?>
+<text x="280" y="4904" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,4900h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,4900v-252" stroke="black"/>
+<rect x="276" y="4912" width="51.050000000000004" height="16" stroke="black"/>
+<?xmlizer tab="13" ligne="245" xMax="351.05" yMax="4944"?>
+<text x="280" y="4924" style="stroke:none;;fill:black;">RTerme</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,4920h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,4920v-272" stroke="black"/>
+<?xmlizer tab="14" ligne="246" xMax="330.46" yMax="4964"?>
+<text x="300" y="4944" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M296,4940h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M286,4940v-12" stroke="black"/>
+<?xmlizer tab="13" ligne="247" xMax="310.46" yMax="4984"?>
+<text x="280" y="4964" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M276,4960h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M266,4960v-312" stroke="black"/>
+<?xmlizer tab="12" ligne="248" xMax="290.46" yMax="5004"?>
+<text x="260" y="4984" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,4980h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,4980v-612" stroke="black"/>
+<?xmlizer tab="11" ligne="249" xMax="270.46000000000004" yMax="5024"?>
+<text x="240" y="5004" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,5000h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,5000v-672" stroke="black"/>
+<rect x="236" y="5012" width="59.045" height="16" stroke="black"/>
+<?xmlizer tab="11" ligne="250" xMax="319.045" yMax="5044"?>
+<text x="240" y="5024" style="stroke:none;;fill:black;">RRelation</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,5020h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,5020v-692" stroke="black"/>
+<?xmlizer tab="12" ligne="251" xMax="290.46" yMax="5064"?>
+<text x="260" y="5044" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M256,5040h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M246,5040v-12" stroke="black"/>
+<?xmlizer tab="11" ligne="252" xMax="270.46000000000004" yMax="5084"?>
+<text x="240" y="5064" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,5060h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,5060v-732" stroke="black"/>
+<?xmlizer tab="10" ligne="253" xMax="250.46" yMax="5104"?>
+<text x="220" y="5084" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,5080h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,5080v-792" stroke="black"/>
+<rect x="216" y="5092" width="81.185" height="16" stroke="black"/>
+<?xmlizer tab="10" ligne="254" xMax="321.185" yMax="5124"?>
+<text x="220" y="5104" style="stroke:none;;fill:black;">RConjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,5100h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,5100v-812" stroke="black"/>
+<?xmlizer tab="11" ligne="255" xMax="270.46000000000004" yMax="5144"?>
+<text x="240" y="5124" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M236,5120h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M226,5120v-12" stroke="black"/>
+<?xmlizer tab="10" ligne="256" xMax="250.46" yMax="5164"?>
+<text x="220" y="5144" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,5140h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,5140v-852" stroke="black"/>
+<?xmlizer tab="9" ligne="257" xMax="230.46" yMax="5184"?>
+<text x="200" y="5164" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,5160h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,5160v-912" stroke="black"/>
+<rect x="196" y="5172" width="79.0325" height="16" stroke="black"/>
+<?xmlizer tab="9" ligne="258" xMax="299.0325" yMax="5204"?>
+<text x="200" y="5184" style="stroke:none;;fill:black;">RDisjonction</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,5180h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,5180v-932" stroke="black"/>
+<?xmlizer tab="10" ligne="259" xMax="250.46" yMax="5224"?>
+<text x="220" y="5204" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M216,5200h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M206,5200v-12" stroke="black"/>
+<?xmlizer tab="9" ligne="260" xMax="230.46" yMax="5244"?>
+<text x="200" y="5224" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,5220h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,5220v-972" stroke="black"/>
+<?xmlizer tab="8" ligne="261" xMax="210.46" yMax="5264"?>
+<text x="180" y="5244" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,5240h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,5240v-1032" stroke="black"/>
+<rect x="176" y="5252" width="38.135000000000005" height="16" stroke="black"/>
+<?xmlizer tab="8" ligne="262" xMax="238.135" yMax="5284"?>
+<text x="180" y="5264" style="stroke:none;;fill:black;">RExp</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,5260h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,5260v-1052" stroke="black"/>
+<?xmlizer tab="9" ligne="263" xMax="230.46" yMax="5304"?>
+<text x="200" y="5284" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M196,5280h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M186,5280v-12" stroke="black"/>
+<?xmlizer tab="8" ligne="264" xMax="210.46" yMax="5324"?>
+<text x="180" y="5304" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M176,5300h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M166,5300v-1092" stroke="black"/>
+<?xmlizer tab="7" ligne="265" xMax="190.46" yMax="5344"?>
+<text x="160" y="5324" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,5320h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,5320v-1152" stroke="black"/>
+<?xmlizer tab="6" ligne="266" xMax="170.46" yMax="5364"?>
+<text x="140" y="5344" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,5340h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,5340v-1212" stroke="black"/>
+<rect x="136" y="5352" width="61.1975" height="16" stroke="black"/>
+<?xmlizer tab="6" ligne="267" xMax="221.1975" yMax="5384"?>
+<text x="140" y="5364" style="stroke:none;;fill:black;">SuiteInsts</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,5360h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,5360v-1232" stroke="black"/>
+<?xmlizer tab="7" ligne="268" xMax="190.46" yMax="5404"?>
+<text x="160" y="5384" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M156,5380h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M146,5380v-12" stroke="black"/>
+<?xmlizer tab="6" ligne="269" xMax="170.46" yMax="5424"?>
+<text x="140" y="5404" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M136,5400h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M126,5400v-1272" stroke="black"/>
+<?xmlizer tab="5" ligne="270" xMax="150.45999999999998" yMax="5444"?>
+<text x="120" y="5424" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M116,5420h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M106,5420v-1332" stroke="black"/>
+<?xmlizer tab="4" ligne="271" xMax="130.45999999999998" yMax="5464"?>
+<text x="100" y="5444" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M96,5440h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M86,5440v-3132" stroke="black"/>
+<?xmlizer tab="3" ligne="272" xMax="110.46" yMax="5484"?>
+<text x="80" y="5464" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M76,5460h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M66,5460v-3192" stroke="black"/>
+<?xmlizer tab="2" ligne="273" xMax="90.46000000000001" yMax="5504"?>
+<text x="60" y="5484" style="stroke:none;;fill:black;"></text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M56,5480h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M46,5480v-4992" stroke="black"/>
+<?xmlizer tab="1" ligne="274" xMax="115.355" yMax="5524"?>
+<text x="40" y="5504" style="stroke:none;;fill:black;">[FIN, fin]</text>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M36,5500h-10" stroke="black"/>
+<path style="stroke-width:1;stroke-miterlimit:3;fill:none;" d="M26,5500v-5472" stroke="black"/>
+</g>
+</svg>

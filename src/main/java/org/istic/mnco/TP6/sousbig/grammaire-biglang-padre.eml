@@ -1,0 +1,550 @@
+Return-Path: <Sophie.Robin@irisa.fr>
+Received: from smtp.irisa.fr (meli.irisa.fr [131.254.254.27])
+	 by melo.irisa.fr (Cyrus v2.2.10) with LMTPA;
+	 Wed, 01 Jun 2005 15:44:45 +0200
+X-Sieve: CMU Sieve 2.2
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by localhost.irisa.fr (Postfix) with ESMTP id 16123FAC9
+	for <herman@irisa.fr>; Wed,  1 Jun 2005 15:44:45 +0200 (CEST)
+Received: from smtp.irisa.fr ([131.254.254.26])
+ by localhost (meli.irisa.fr [127.0.0.1]) (amavisd-new, port 10024) with ESMTP
+ id 30088-09 for <herman@irisa.fr>; Wed,  1 Jun 2005 15:44:43 +0200 (CEST)
+Received: from [131.254.10.222] (dune.irisa.fr [131.254.10.222])
+	(using TLSv1 with cipher RC4-MD5 (128/128 bits))
+	(No client certificate requested)
+	by smtp.irisa.fr (Postfix) with ESMTP id 1E43CFAA9
+	for <herman@irisa.fr>; Wed,  1 Jun 2005 15:44:43 +0200 (CEST)
+Message-ID: <429DBBCB.4010906@irisa.fr>
+Date: Wed, 01 Jun 2005 15:44:43 +0200
+From: Sophie Robin <Sophie.Robin@irisa.fr>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.3) Gecko/20041020
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: Daniel Herman <herman@irisa.fr>
+Subject: grammaire biglang
+Content-Type: multipart/mixed;
+ boundary="------------030309090200020901010002"
+X-Virus-Scanned: by amavisd-new at irisa.fr
+X-Spam-Status: No, hits=-2.82 tagged_above=-20 required=5 tests=ALL_TRUSTED
+X-Spam-Level: 
+
+This is a multi-part message in MIME format.
+--------------030309090200020901010002
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 8bit
+
+Voici enfin la grammaire biglang passée sous padre.
+
+Tu trouveras en attaché :
+. biglang.pad : grammaire de Biglang fournie par toi et revue de manière 
+à pouvoir passer sous padre au niveau syntaxe (pas de partie droite de 
+la forme Decl [; Decls | vide ) telle que tu en avais avant). Elle est 
+LL(1) normalement.
+. biglang.ens : construit par padre où tu trouveras les ensembles 
+Premiers et Suivants
+. biglang.java : analyseur construit par padre
+
+Je m'excuse pour le délai de livraison et suis prête à faire autre chose 
+pour le projet pour me faire pardonner.
+
+    Sophie
+
+--------------030309090200020901010002
+Content-Type: text/plain;
+ name="biglang.ens"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="biglang.ens"
+
+GRAMMAIRE : biglang.pad
+
+Prog	::= 
+	Decls debut Insts fin ; 
+Decls ::= 
+	Decl RDecls | vide ; 
+RDecls ::= $; Decls | vide ; 
+Decl 	::= 
+	entier ident Idents | 
+	booleen ident Idents  ; 
+Idents ::= 
+	, ident Idents | vide ; 
+Insts ::= 
+	Instruction RInsts ; 
+RInsts ::=  $; Insts | vide ; 
+Instruction ::= 
+	Exp | lire ident | ecrire ident ; 
+Exp ::= 
+	SansAff RExp ; 
+RExp ::=  := Exp | vide ; 
+SansAff ::= 
+	Disjonction  RDisjonction ; 
+RDisjonction ::=  
+	ou Disjonction  RDisjonction | vide ; 
+Disjonction ::= 
+	Conjonction  RConjonction ; 
+RConjonction ::= 
+	et Conjonction RConjonction | vide ; 
+Conjonction ::= 
+	Relation  RRelation ; 
+RRelation ::=  
+	 < Relation RRelation | 
+	= Relation RRelation | vide ; 
+Relation ::= 
+	Terme  RTerme ; 
+RTerme ::= 
+	+ Terme RTerme | 
+	- Terme RTerme | vide ; 
+Terme ::= 
+	Facteur  RFacteur ; 
+RFacteur ::=  
+	* Facteur RFacteur | 
+	/ Facteur RFacteur | vide ; 
+Facteur ::= 
+	non Facteur | Primaire ; 
+Primaire ::= 
+	ident | nbentier | ( Exp ) | 
+	si Exp alors Insts RPrimaire fsi ; 
+RPrimaire ::= sinon Insts | vide ; 
+
+la grammaire fournie est LL1
+
+codage des terminaux : 
+
+  1 : ident
+  2 : nbentier
+  7 : debut
+  8 : fin
+  9 : ;
+ 10 : entier
+ 11 : booleen
+ 12 : ,
+ 13 : lire
+ 14 : ecrire
+ 15 : :=
+ 16 : ou
+ 17 : et
+ 18 : <
+ 19 : =
+ 20 : +
+ 21 : -
+ 22 : *
+ 23 : /
+ 24 : non
+ 25 : (
+ 26 : )
+ 27 : si
+ 28 : alors
+ 29 : fsi
+ 30 : sinon
+fin des terminaux
+
+Non terminaux :
+
+  1 : prog
+          NULL = FAUX
+          PREMIER = debut entier booleen 
+          SUIVANT =  
+  2 : decls
+          NULL = VRAI
+          PREMIER = entier booleen 
+          SUIVANT = debut 
+  3 : rdecls
+          NULL = VRAI
+          PREMIER = ; 
+          SUIVANT = debut 
+  4 : decl
+          NULL = FAUX
+          PREMIER = entier booleen 
+          SUIVANT = debut ; 
+  5 : idents
+          NULL = VRAI
+          PREMIER = , 
+          SUIVANT = debut ; 
+  6 : insts
+          NULL = FAUX
+          PREMIER = ident nbentier lire ecrire non ( si 
+          SUIVANT = fin fsi sinon 
+  7 : rinsts
+          NULL = VRAI
+          PREMIER = ; 
+          SUIVANT = fin fsi sinon 
+  8 : instruction
+          NULL = FAUX
+          PREMIER = ident nbentier lire ecrire non ( si 
+          SUIVANT = fin ; fsi sinon 
+  9 : exp
+          NULL = FAUX
+          PREMIER = ident nbentier non ( si 
+          SUIVANT = fin ; ) alors fsi sinon 
+ 10 : rexp
+          NULL = VRAI
+          PREMIER = := 
+          SUIVANT = fin ; ) alors fsi sinon 
+ 11 : sansaff
+          NULL = FAUX
+          PREMIER = ident nbentier non ( si 
+          SUIVANT = fin ; := ) alors fsi sinon 
+ 12 : rdisjonction
+          NULL = VRAI
+          PREMIER = ou 
+          SUIVANT = fin ; := ) alors fsi sinon 
+ 13 : disjonction
+          NULL = FAUX
+          PREMIER = ident nbentier non ( si 
+          SUIVANT = fin ; := ou ) alors fsi sinon 
+ 14 : rconjonction
+          NULL = VRAI
+          PREMIER = et 
+          SUIVANT = fin ; := ou ) alors fsi sinon 
+ 15 : conjonction
+          NULL = FAUX
+          PREMIER = ident nbentier non ( si 
+          SUIVANT = fin ; := ou et ) alors fsi sinon 
+ 16 : rrelation
+          NULL = VRAI
+          PREMIER = < = 
+          SUIVANT = fin ; := ou et ) alors fsi sinon 
+ 17 : relation
+          NULL = FAUX
+          PREMIER = ident nbentier non ( si 
+          SUIVANT = fin ; := ou et < = ) alors fsi sinon 
+ 18 : rterme
+          NULL = VRAI
+          PREMIER = + - 
+          SUIVANT = fin ; := ou et < = ) alors fsi sinon 
+ 19 : terme
+          NULL = FAUX
+          PREMIER = ident nbentier non ( si 
+          SUIVANT = fin ; := ou et < = + - ) alors fsi sinon 
+ 20 : rfacteur
+          NULL = VRAI
+          PREMIER = * / 
+          SUIVANT = fin ; := ou et < = + - ) alors fsi sinon 
+ 21 : facteur
+          NULL = FAUX
+          PREMIER = ident nbentier non ( si 
+          SUIVANT = fin ; := ou et < = + - * / ) alors fsi sinon 
+ 22 : primaire
+          NULL = FAUX
+          PREMIER = ident nbentier ( si 
+          SUIVANT = fin ; := ou et < = + - * / ) alors fsi sinon 
+ 23 : rprimaire
+          NULL = VRAI
+          PREMIER = sinon 
+          SUIVANT = fsi 
+fin des non terminaux . 
+
+--------------030309090200020901010002
+Content-Type: text/plain;
+ name="biglang.pad"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="biglang.pad"
+
+Prog	::=
+	Decls debut Insts fin ;
+Decls ::=
+	Decl RDecls | vide ;
+RDecls ::= $; Decls | vide ;
+Decl 	::=
+	entier ident Idents |
+	booleen ident Idents  ;
+Idents ::=
+	, ident Idents | vide ;
+Insts ::=
+	Instruction RInsts ;
+RInsts ::=  $; Insts | vide ;
+Instruction ::=
+	Exp | lire ident | ecrire ident ;
+Exp ::=
+	SansAff RExp ;
+RExp ::=  := Exp | vide ;
+SansAff ::=
+	Disjonction  RDisjonction ;
+RDisjonction ::= 
+	ou Disjonction  RDisjonction | vide ;
+Disjonction ::=
+	Conjonction  RConjonction ;
+RConjonction ::=
+	et Conjonction RConjonction | vide ;
+Conjonction ::=
+	Relation  RRelation ;
+RRelation ::= 
+	 < Relation RRelation |
+	= Relation RRelation | vide ;
+Relation ::=
+	Terme  RTerme ;
+RTerme ::=
+	+ Terme RTerme |
+	- Terme RTerme | vide ;
+Terme ::=
+	Facteur  RFacteur ;
+RFacteur ::= 
+	* Facteur RFacteur |
+	/ Facteur RFacteur | vide ;
+Facteur ::=
+	non Facteur | Primaire ;
+Primaire ::=
+	ident | nbentier | ( Exp ) |
+	si Exp alors Insts RPrimaire fsi ;
+RPrimaire ::= sinon Insts | vide ;
+
+--------------030309090200020901010002
+Content-Type: text/plain;
+ name="biglang.java"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="biglang.java"
+
+import java.io.*;
+
+public class Biglang {
+  private static final String [] TABTER = {
+     "","ident","nbentier","nbreel","libelle","fdf","incorrect","debut","fin"
+    ,";","entier","booleen",",","lire","ecrire",":=","ou","et","<","=","+"
+    ,"-","*","/","non","(",")","si","alors","fsi","sinon","{","}"
+  };
+  private static final int [] [] TABSPEC = {
+     {  0,  0},{125, 32},{123, 31},{ 61, 19},{ 60, 18},{ 59,  9},{ 58, 15}
+    ,{ 47, 23},{ 45, 21},{ 44, 12},{ 43, 20},{ 42, 22},{ 41, 26},{ 40, 25}
+    
+  };
+
+  private static void chargerTableLex () {
+    for (int i=1;i<TABTER.length;i++) Lex.chercherId(TABTER[i]);
+    Lex.paramLex(false,(char)32,(char)125,31,32,32);
+    for (int i=1;i<TABSPEC.length;i++)
+        Lex.placerSpec((char)TABSPEC[i][0],TABSPEC[i][1]);
+  }
+
+
+  private static void prog_() {
+    decls_();
+    if (Lex.lu==7) /* debut */ Lex.lire(); else Lex.erreur(1);
+    insts_();
+    if (Lex.lu==8) /* fin */ Lex.lire(); else Lex.erreur(1);
+  }
+  private static void decls_() {
+    switch (Lex.lu) {
+      case  10 : /* entier */
+      case  11 : /* booleen */
+                 decl_();
+                 rdecls_();
+                 break;
+    }
+  }
+  private static void rdecls_() {
+    switch (Lex.lu) {
+      case   9 : /* ; */
+                 Lex.lire();
+                 decls_();
+                 break;
+    }
+  }
+  private static void decl_() {
+    switch (Lex.lu) {
+      case  10 : /* entier */
+                 Lex.lire();
+                 if (Lex.lu==1) /* ident */ Lex.lire(); else Lex.erreur(1);
+                 idents_();
+                 break;
+      case  11 : /* booleen */
+                 Lex.lire();
+                 if (Lex.lu==1) /* ident */ Lex.lire(); else Lex.erreur(1);
+                 idents_();
+                 break;
+    }
+  }
+  private static void idents_() {
+    switch (Lex.lu) {
+      case  12 : /* , */
+                 Lex.lire();
+                 if (Lex.lu==1) /* ident */ Lex.lire(); else Lex.erreur(1);
+                 idents_();
+                 break;
+    }
+  }
+  private static void insts_() {
+    instruction_();
+    rinsts_();
+  }
+  private static void rinsts_() {
+    switch (Lex.lu) {
+      case   9 : /* ; */
+                 Lex.lire();
+                 insts_();
+                 break;
+    }
+  }
+  private static void instruction_() {
+    switch (Lex.lu) {
+      case   1 : /* ident */
+      case   2 : /* nbentier */
+      case  24 : /* non */
+      case  25 : /* ( */
+      case  27 : /* si */
+                 exp_();
+                 break;
+      case  13 : /* lire */
+                 Lex.lire();
+                 if (Lex.lu==1) /* ident */ Lex.lire(); else Lex.erreur(1);
+                 break;
+      case  14 : /* ecrire */
+                 Lex.lire();
+                 if (Lex.lu==1) /* ident */ Lex.lire(); else Lex.erreur(1);
+                 break;
+      default  : Lex.erreur(1);
+    }
+  }
+  private static void exp_() {
+    sansaff_();
+    rexp_();
+  }
+  private static void rexp_() {
+    switch (Lex.lu) {
+      case  15 : /* := */
+                 Lex.lire();
+                 exp_();
+                 break;
+    }
+  }
+  private static void sansaff_() {
+    disjonction_();
+    rdisjonction_();
+  }
+  private static void rdisjonction_() {
+    switch (Lex.lu) {
+      case  16 : /* ou */
+                 Lex.lire();
+                 disjonction_();
+                 rdisjonction_();
+                 break;
+    }
+  }
+  private static void disjonction_() {
+    conjonction_();
+    rconjonction_();
+  }
+  private static void rconjonction_() {
+    switch (Lex.lu) {
+      case  17 : /* et */
+                 Lex.lire();
+                 conjonction_();
+                 rconjonction_();
+                 break;
+    }
+  }
+  private static void conjonction_() {
+    relation_();
+    rrelation_();
+  }
+  private static void rrelation_() {
+    switch (Lex.lu) {
+      case  18 : /* < */
+                 Lex.lire();
+                 relation_();
+                 rrelation_();
+                 break;
+      case  19 : /* = */
+                 Lex.lire();
+                 relation_();
+                 rrelation_();
+                 break;
+    }
+  }
+  private static void relation_() {
+    terme_();
+    rterme_();
+  }
+  private static void rterme_() {
+    switch (Lex.lu) {
+      case  20 : /* + */
+                 Lex.lire();
+                 terme_();
+                 rterme_();
+                 break;
+      case  21 : /* - */
+                 Lex.lire();
+                 terme_();
+                 rterme_();
+                 break;
+    }
+  }
+  private static void terme_() {
+    facteur_();
+    rfacteur_();
+  }
+  private static void rfacteur_() {
+    switch (Lex.lu) {
+      case  22 : /* * */
+                 Lex.lire();
+                 facteur_();
+                 rfacteur_();
+                 break;
+      case  23 : /* / */
+                 Lex.lire();
+                 facteur_();
+                 rfacteur_();
+                 break;
+    }
+  }
+  private static void facteur_() {
+    switch (Lex.lu) {
+      case  24 : /* non */
+                 Lex.lire();
+                 facteur_();
+                 break;
+      case   1 : /* ident */
+      case   2 : /* nbentier */
+      case  25 : /* ( */
+      case  27 : /* si */
+                 primaire_();
+                 break;
+      default  : Lex.erreur(1);
+    }
+  }
+  private static void primaire_() {
+    switch (Lex.lu) {
+      case   1 : /* ident */
+                 Lex.lire();
+                 break;
+      case   2 : /* nbentier */
+                 Lex.lire();
+                 break;
+      case  25 : /* ( */
+                 Lex.lire();
+                 exp_();
+                 if (Lex.lu==26) /* ) */ Lex.lire(); else Lex.erreur(1);
+                 break;
+      case  27 : /* si */
+                 Lex.lire();
+                 exp_();
+                 if (Lex.lu==28) /* alors */ Lex.lire(); else Lex.erreur(1);
+                 insts_();
+                 rprimaire_();
+                 if (Lex.lu==29) /* fsi */ Lex.lire(); else Lex.erreur(1);
+                 break;
+    }
+  }
+  private static void rprimaire_() {
+    switch (Lex.lu) {
+      case  30 : /* sinon */
+                 Lex.lire();
+                 insts_();
+                 break;
+    }
+  }
+
+  public static void main (String[] argv) {
+      Lex.suffixe=".big";
+      Lex.initLexico();
+      chargerTableLex();
+      PtGen.executer(0);
+      Lex.lire();
+      prog_();
+      if (Lex.lu!=Lex.FDF) Lex.erreur(8);
+      System.out.println("FIN DE LA COMPILATION");
+  }
+}
+
+--------------030309090200020901010002--
