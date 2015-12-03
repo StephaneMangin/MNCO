@@ -63,7 +63,7 @@ public class BigLangException extends Exception {
     private static String[] type = {"AnLex ", "AnSynt ", "AnSem", "Gen", "Commandes"};
     private static String[][] messages = {
             {// BL_LEX : analyse lexicale
-                    "unité lexicale non reconnue"
+                    "unite lexicale non reconnue"
             },
             {// BL_SYNT : analyse syntaxique
                     "on attend un des terminaux suivants : ",

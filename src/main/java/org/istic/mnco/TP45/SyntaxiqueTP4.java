@@ -5,6 +5,7 @@ package org.istic.mnco.TP45;
 //import es.*;
 
 import org.istic.mnco.TP45.automate.Analex1;
+import org.istic.mnco.TP45.lexical.constlex;
 
 /**
   * Reconnait des expressions PREFIXES
@@ -46,24 +47,24 @@ public class SyntaxiqueTP4  {
 
 	public void Axiome(){
 		expr();
-		if (! (lexlu == lexpoint) ) {System.out.println("Erreur ds axiome : . attendu");}
+		if (! (lexlu == constlex.lexpoint) ) {System.out.println("Erreur ds axiome : . attendu");}
 		else  {GenEcrire();}
 	}
 
 	public void expr() {
         switch (lexlu) {
-            case lexident : GenEcrire(); AvanceTete(); break;
-	        case lexentier : GenEcrire(); AvanceTete(); break;
+            case constlex.lexident : GenEcrire(); AvanceTete(); break;
+	        case constlex.lexentier : GenEcrire(); AvanceTete(); break;
 	        default :GenEcrirePO();  op(); expr(); GenEcrireOP(depile()); expr(); GenEcrirePF();
 	    }
 	}
 
     public void op() {
         switch (lexlu) {
-            case lexplus : empile("+"); AvanceTete() ;  break;
-            case lexmoins : empile("-"); AvanceTete() ;  break;
-            case lexmult : empile("*"); AvanceTete() ;  break;
-            case lexdiv : empile("/"); AvanceTete() ;  break;
+            case constlex.lexplus : empile("+"); AvanceTete() ;  break;
+            case constlex.lexmoins : empile("-"); AvanceTete() ;  break;
+            case constlex.lexmult : empile("*"); AvanceTete() ;  break;
+            case constlex.lexdiv : empile("/"); AvanceTete() ;  break;
             default : System.out.println("Erreur ds op") ; break;
         }
     }

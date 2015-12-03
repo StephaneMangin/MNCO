@@ -44,7 +44,7 @@ public class ArbreSyntaxique {
         a.ecrire("</" + b + ">\n");
     }
 
-    public void texte(AnalyseLexicale.TêteDeLecture b) {
+    public void texte(AnalyseLexicale.TeteDeLecture b) {
         a.ecrire(b + "\n");
     }
 

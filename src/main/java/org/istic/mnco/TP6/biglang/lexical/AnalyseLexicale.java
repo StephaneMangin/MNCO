@@ -18,12 +18,12 @@ public class AnalyseLexicale extends Automate {
     static final int nEtats = 14;
     static final int tVocabulaire = 256;
     static final int dernier = nEtats - 1;
-    public TêteDeLecture lexLu;
-    char[] séparateurs = {' ', '\n', '\r', '\t'};
+    public TeteDeLecture lexLu;
+    char[] separateurs = {' ', '\n', '\r', '\t'};
 
     public AnalyseLexicale() {
-        lexLu = new TêteDeLecture();
-        états = new int[nEtats];
+        lexLu = new TeteDeLecture();
+        etats = new int[nEtats];
         transitions = new int[nEtats][tVocabulaire];
         actions = new Action[nEtats][tVocabulaire];
 
@@ -48,14 +48,14 @@ public class AnalyseLexicale extends Automate {
             transitions[0][j] = 1;
             actions[0][j] = new Action() {
                 public void executer() {
-                    lexLu.catégorie = CatégoriesLexicales.LEX_IDF;
-                    lexLu.unité = "" + (char) tête;
+                    lexLu.categorie = CategoriesLexicales.LEX_IDF;
+                    lexLu.unite = "" + (char) tete;
                 }
             };
             transitions[1][j] = 1;
             actions[1][j] = new Action() {
                 public void executer() {
-                    lexLu.unité = lexLu.unité + (char) tête;
+                    lexLu.unite = lexLu.unite + (char) tete;
                 }
             };
         }
@@ -64,20 +64,20 @@ public class AnalyseLexicale extends Automate {
             transitions[1][j] = 1;
             actions[1][j] = new Action() {
                 public void executer() {
-                    lexLu.unité = lexLu.unité + (char) tête;
+                    lexLu.unite = lexLu.unite + (char) tete;
                 }
             };
             transitions[0][j] = 2;
             actions[0][j] = new Action() {
                 public void executer() {
-                    lexLu.catégorie = CatégoriesLexicales.LEX_NBRE;
-                    lexLu.unité = "" + (char) tête;
+                    lexLu.categorie = CategoriesLexicales.LEX_NBRE;
+                    lexLu.unite = "" + (char) tete;
                 }
             };
             transitions[2][j] = 2;
             actions[2][j] = new Action() {
                 public void executer() {
-                    lexLu.unité = lexLu.unité + (char) tête;
+                    lexLu.unite = lexLu.unite + (char) tete;
                 }
             };
         }
@@ -85,7 +85,7 @@ public class AnalyseLexicale extends Automate {
         transitions[0][':'] = 3;
         actions[0][':'] = new Action() {
             public void executer() {
-                lexLu.unité = "" + (char) tête;
+                lexLu.unite = "" + (char) tete;
             }
         };
 //		 transitions à partir de 3, en erreur par défaut
@@ -101,64 +101,64 @@ public class AnalyseLexicale extends Automate {
         transitions[3]['='] = 4;
         actions[3]['='] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_AFF;
-                lexLu.unité = lexLu.unité + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_AFF;
+                lexLu.unite = lexLu.unite + (char) tete;
             }
         };
 
         transitions[0]['='] = 5;
         actions[0]['='] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_EG;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_EG;
+                lexLu.unite = "" + (char) tete;
             }
         };
 //		transitions sur ;
         transitions[0][';'] = 5;
         actions[0][';'] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_PT_VIRG;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_PT_VIRG;
+                lexLu.unite = "" + (char) tete;
             }
         };
 //		transitions sur ,
         transitions[0][','] = 5;
         actions[0][','] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_VIRG;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_VIRG;
+                lexLu.unite = "" + (char) tete;
             }
         };
 //		transitions sur .
         transitions[0]['.'] = 5;
         actions[0]['.'] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_PT;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_PT;
+                lexLu.unite = "" + (char) tete;
             }
         };
 //		transitions sur (
         transitions[0]['('] = 5;
         actions[0]['('] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_PAR_OUV;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_PAR_OUV;
+                lexLu.unite = "" + (char) tete;
             }
         };
 //		transitions sur )
         transitions[0][')'] = 5;
         actions[0][')'] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_PAR_FER;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_PAR_FER;
+                lexLu.unite = "" + (char) tete;
             }
         };
 //		transitions sur +
         transitions[0]['+'] = 6;
         actions[0]['+'] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_PLUS;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_PLUS;
+                lexLu.unite = "" + (char) tete;
             }
         };
 
@@ -168,7 +168,7 @@ public class AnalyseLexicale extends Automate {
         actions[6][':'] = new Action() {
             public void executer() {
 
-                lexLu.unité = lexLu.unité + (char) tête;
+                lexLu.unite = lexLu.unite + (char) tete;
             }
         };
 
@@ -184,8 +184,8 @@ public class AnalyseLexicale extends Automate {
         transitions[7]['='] = 8;
         actions[7]['='] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_AFF_ADD;
-                lexLu.unité = lexLu.unité + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_AFF_ADD;
+                lexLu.unite = lexLu.unite + (char) tete;
             }
         };
 
@@ -194,40 +194,40 @@ public class AnalyseLexicale extends Automate {
         transitions[0]['-'] = 5;
         actions[0]['-'] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_MOINS;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_MOINS;
+                lexLu.unite = "" + (char) tete;
             }
         };
 //		transitions sur *
         transitions[0]['*'] = 5;
         actions[0]['*'] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_MULT;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_MULT;
+                lexLu.unite = "" + (char) tete;
             }
         };
 //		transitions sur /
         transitions[0]['/'] = 5;
         actions[0]['/'] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_DIV;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_DIV;
+                lexLu.unite = "" + (char) tete;
             }
         };
 //		transitions sur <
         transitions[0]['<'] = 11;
         actions[0]['<'] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_INF;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_INF;
+                lexLu.unite = "" + (char) tete;
             }
         };
 // nouveau <= : transition sur = depuis 11
         transitions[11]['='] = 12;
         actions[11]['='] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_INF_EG;
-                lexLu.unité = lexLu.unité + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_INF_EG;
+                lexLu.unite = lexLu.unite + (char) tete;
             }
         };
 
@@ -236,34 +236,34 @@ public class AnalyseLexicale extends Automate {
         transitions[0]['>'] = 9;
         actions[0]['>'] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_SUP;
-                lexLu.unité = "" + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_SUP;
+                lexLu.unite = "" + (char) tete;
             }
         };
 // nouveau >= : transition sur = depuis 8
         transitions[9]['='] = 10;
         actions[9]['='] = new Action() {
             public void executer() {
-                lexLu.catégorie = CatégoriesLexicales.LEX_SUP_EG;
-                lexLu.unité = lexLu.unité + (char) tête;
+                lexLu.categorie = CategoriesLexicales.LEX_SUP_EG;
+                lexLu.unite = lexLu.unite + (char) tete;
             }
         };
 
-        //		transitions sur les séparateurs
-        for (int j = 0; j < séparateurs.length; j++) {
-            transitions[0][séparateurs[j]] = 0;
-            actions[0][séparateurs[j]] = new ActionVide();
+        //		transitions sur les separateurs
+        for (int j = 0; j < separateurs.length; j++) {
+            transitions[0][separateurs[j]] = 0;
+            actions[0][separateurs[j]] = new ActionVide();
         }
         for (int i = 2; i < nEtats; i++) {
             if ((i != 3) && (i != 7)) {
-                for (int j = 0; j < séparateurs.length; j++) {
-                    transitions[i][séparateurs[j]] = dernier;
-                    actions[i][séparateurs[j]] = new ActionVide();
+                for (int j = 0; j < separateurs.length; j++) {
+                    transitions[i][separateurs[j]] = dernier;
+                    actions[i][separateurs[j]] = new ActionVide();
                 }
             }
         }
 
-// états finaux
+// etats finaux
         estFinal = new boolean[nEtats];
         for (int i = 0; i < dernier; i++) {
             estFinal[i] = false;
@@ -272,17 +272,17 @@ public class AnalyseLexicale extends Automate {
 // condition spéciale d'arret
         cEst = new ConditionDArret() {
             public boolean fini() {
-                return estFinal[étatCourant];
+                return estFinal[etatCourant];
             }
         };
 // action finale
         actionFinale = new Action() {
             public void executer() {
-                if (estFinal[étatCourant]) {
+                if (estFinal[etatCourant]) {
                     // passage au crible
-                    Integer n = (Integer) CatégoriesLexicales.crible.get(lexLu.unité);
+                    Integer n = (Integer) CategoriesLexicales.crible.get(lexLu.unite);
                     if (n != null) {
-                        lexLu.catégorie = n.intValue();
+                        lexLu.categorie = n.intValue();
                     }
                     // System.out.println (lexLu) ;
                 }
@@ -292,7 +292,7 @@ public class AnalyseLexicale extends Automate {
 
     public static void main(String[] args) {
         AnalyseLexicale lex = new AnalyseLexicale();
-        lex.initTête("clavier");
+        lex.initTete("clavier");
         try {
             lex.lancer();
             System.out.println(lex.lexLu.toString());
@@ -300,8 +300,8 @@ public class AnalyseLexicale extends Automate {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        while (lex.lexLu.catégorie != CatégoriesLexicales.LEX_PT) {
-            lex.reInitTête();
+        while (lex.lexLu.categorie != CategoriesLexicales.LEX_PT) {
+            lex.reInitTete();
             try {
                 lex.lancer();
                 System.out.println(lex.lexLu.toString());
@@ -313,16 +313,16 @@ public class AnalyseLexicale extends Automate {
         }
     }
 
-    public class TêteDeLecture {
-        public int catégorie;
-        public String unité;
+    public class TeteDeLecture {
+        public int categorie;
+        public String unite;
 
         public String toString() {
-            String enClair = unité;
+            String enClair = unite;
             if (enClair.equals("<")) {
                 enClair = "&lt;";
             }
-            return "[" + CatégoriesLexicales.enClair[catégorie] + ", " + enClair + "]";
+            return "[" + CategoriesLexicales.enClair[categorie] + ", " + enClair + "]";
         }
     }
 }

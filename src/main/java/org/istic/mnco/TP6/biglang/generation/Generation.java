@@ -17,7 +17,7 @@ import java.util.Stack;
 /**
  * BigLang : analyse sémantique et génération
  */
-public class Génération {
+public class Generation {
     static final int TYPE_ENTIER = 0;
     static final int TYPE_BOOLEEN = 1;
     static final int TYPE_NEUTRE = 2;
@@ -31,10 +31,10 @@ public class Génération {
      * table des symboles : les éléments sont des <code>Description</code>
      */
     public static Hashtable tableDesSymboles;
-    public static Hashtable tableDesOpérateurs = initTableDesOpérateurs();
-    public static Stack pileDesOpérateursVus = new Stack();
+    public static Hashtable tableDesOperateurs = initTableDesOperateurs();
+    public static Stack pileDesOperateursVus = new Stack();
     public static Stack pileDesTypesVus = new Stack();
-    public static Stack pileDesRepères = new Stack();
+    public static Stack pileDesReperes = new Stack();
     public static Stack pileDesReprises = new Stack();
     /**
      * Compteur d'emplacements. désigne le prochain emplacement libre dans le code objet.
@@ -51,13 +51,13 @@ public class Génération {
     /**
      * indique si la construction courante est un repère
      */
-    static boolean cEstUnRepère;
+    static boolean cEstUnRepere;
 
-    private static Hashtable initTableDesOpérateurs() {
+    private static Hashtable initTableDesOperateurs() {
         Hashtable laTable = new Hashtable();
         laTable.put(
                 "non",
-                new Opérateur(
+                new Operateur(
                         CodesInstructions.CODE_NON,
                         TYPE_INEXISTANT, TYPE_BOOLEEN, TYPE_BOOLEEN,
                         true, true,
@@ -66,7 +66,7 @@ public class Génération {
         );
         laTable.put(
                 "*",
-                new Opérateur(
+                new Operateur(
                         CodesInstructions.CODE_MULT,
                         TYPE_ENTIER, TYPE_ENTIER, TYPE_ENTIER,
                         true, true,
@@ -75,7 +75,7 @@ public class Génération {
         );
         laTable.put(
                 "/",
-                new Opérateur(
+                new Operateur(
                         CodesInstructions.CODE_DIV,
                         TYPE_ENTIER, TYPE_ENTIER, TYPE_ENTIER,
                         true, true,
@@ -84,7 +84,7 @@ public class Génération {
         );
         laTable.put(
                 "+",
-                new Opérateur(
+                new Operateur(
                         CodesInstructions.CODE_PLUS,
                         TYPE_ENTIER, TYPE_ENTIER, TYPE_ENTIER,
                         true, true,
@@ -93,7 +93,7 @@ public class Génération {
         );
         laTable.put(
                 "-",
-                new Opérateur(
+                new Operateur(
                         CodesInstructions.CODE_MOINS,
                         TYPE_ENTIER, TYPE_ENTIER, TYPE_ENTIER,
                         true, true,
@@ -102,7 +102,7 @@ public class Génération {
         );
         laTable.put(
                 "<",
-                new Opérateur(
+                new Operateur(
                         CodesInstructions.CODE_INF,
                         TYPE_ENTIER, TYPE_ENTIER, TYPE_BOOLEEN,
                         true, true,
@@ -111,7 +111,7 @@ public class Génération {
         );
         laTable.put(
                 "=",
-                new Opérateur(
+                new Operateur(
                         CodesInstructions.CODE_EG,
                         TYPE_ENTIER, TYPE_ENTIER, TYPE_BOOLEEN,
                         true, true,
@@ -120,7 +120,7 @@ public class Génération {
         );
         laTable.put(
                 "ou",
-                new Opérateur(
+                new Operateur(
                         CodesInstructions.CODE_OU,
                         TYPE_BOOLEEN, TYPE_BOOLEEN, TYPE_BOOLEEN,
                         true, true,
@@ -129,7 +129,7 @@ public class Génération {
         );
         laTable.put(
                 "et",
-                new Opérateur(
+                new Operateur(
                         CodesInstructions.CODE_ET,
                         TYPE_BOOLEEN, TYPE_BOOLEEN, TYPE_BOOLEEN,
                         true, true,
@@ -142,7 +142,7 @@ public class Génération {
     /**
      * @param n : nom du fichier objet (sans l'extension)
      */
-    public static void initGénération(String n) {
+    public static void initGeneration(String n) {
         Ce = 0;
         adrVariables = 0;
         objet = new CodeObjet(n);
@@ -155,11 +155,11 @@ public class Génération {
     //
     //
     public static void defVar() throws BigLangException {
-        if (tableDesSymboles.get(AnalyseSyntaxique.tête.unité) != null) {
-            throw new BigLangException(AnalyseSyntaxique.tête.unité, BigLangException.BL_SEM, BigLangException.BL_SEM_DLE_DECL);
+        if (tableDesSymboles.get(AnalyseSyntaxique.tete.unite) != null) {
+            throw new BigLangException(AnalyseSyntaxique.tete.unite, BigLangException.BL_SEM, BigLangException.BL_SEM_DLE_DECL);
         }
         tableDesSymboles.put(
-                AnalyseSyntaxique.tête.unité,
+                AnalyseSyntaxique.tete.unite,
                 new Description(typeCourant, adrVariables)
         );
         adrVariables++;
@@ -189,11 +189,11 @@ public class Génération {
     //
     //
     public static void lire() throws BigLangException {
-        Description d = (Description) tableDesSymboles.get(AnalyseSyntaxique.tête.unité);
+        Description d = (Description) tableDesSymboles.get(AnalyseSyntaxique.tete.unite);
         if (d == null) {
-            throw new BigLangException(AnalyseSyntaxique.tête.unité, BigLangException.BL_SEM, BigLangException.BL_SEM_IDF_NON_DECL);
+            throw new BigLangException(AnalyseSyntaxique.tete.unite, BigLangException.BL_SEM, BigLangException.BL_SEM_IDF_NON_DECL);
         }
-        String enClair = AnalyseSyntaxique.tête.unité + "    ";
+        String enClair = AnalyseSyntaxique.tete.unite + "    ";
         int enAscii = 0;
         for (int i = 0; i < 4; i++) {
             enAscii = enAscii * 256 + enClair.charAt(i);
@@ -210,17 +210,17 @@ public class Génération {
         Ce++;
 
         typeCourant = d.type;
-        cEstUnRepère = false;
+        cEstUnRepere = false;
 
     }
 
     public static void ecrire() throws BigLangException {
-        Description d = (Description) tableDesSymboles.get(AnalyseSyntaxique.tête.unité);
+        Description d = (Description) tableDesSymboles.get(AnalyseSyntaxique.tete.unite);
         if (d == null) {
-            throw new BigLangException(AnalyseSyntaxique.tête.unité, BigLangException.BL_SEM, BigLangException.BL_SEM_IDF_NON_DECL);
+            throw new BigLangException(AnalyseSyntaxique.tete.unite, BigLangException.BL_SEM, BigLangException.BL_SEM_IDF_NON_DECL);
         }
 
-        String enClair = AnalyseSyntaxique.tête.unité + "    ";
+        String enClair = AnalyseSyntaxique.tete.unite + "    ";
         int enAscii = 0;
         for (int i = 0; i < 4; i++) {
             enAscii = enAscii * 256 + enClair.charAt(i);
@@ -232,13 +232,13 @@ public class Génération {
         Ce++;
         objet.modifie(Ce, CodesInstructions.CODE_VALEUR);
         Ce++;
-        objet.modifie(Ce, CodesInstructions.CODE_ÉCRIRE);
+        objet.modifie(Ce, CodesInstructions.CODE_ECRIRE);
         Ce++;
         objet.modifie(Ce, enAscii);
         Ce++;
 
         typeCourant = d.type;
-        cEstUnRepère = false;
+        cEstUnRepere = false;
 
     }
 
@@ -249,18 +249,18 @@ public class Génération {
     //
     public static void neutraliser() throws BigLangException {
         if (typeCourant != TYPE_NEUTRE) {
-            objet.modifie(Ce, CodesInstructions.CODE_DÉPILER);
+            objet.modifie(Ce, CodesInstructions.CODE_DEPILER);
             Ce++;
         }
         typeCourant = TYPE_NEUTRE;
     }
 
     public static void var() throws BigLangException {
-        Description d = (Description) tableDesSymboles.get(AnalyseSyntaxique.tête.unité);
+        Description d = (Description) tableDesSymboles.get(AnalyseSyntaxique.tete.unite);
         if (d == null) {
-            throw new BigLangException(AnalyseSyntaxique.tête.unité, BigLangException.BL_SEM, BigLangException.BL_SEM_IDF_NON_DECL);
+            throw new BigLangException(AnalyseSyntaxique.tete.unite, BigLangException.BL_SEM, BigLangException.BL_SEM_IDF_NON_DECL);
         }
-        cEstUnRepère = true;
+        cEstUnRepere = true;
         typeCourant = d.type;
 
         objet.modifie(Ce, CodesInstructions.CODE_EMPILER);
@@ -271,12 +271,12 @@ public class Génération {
     }
 
     public static void nbre() throws BigLangException {
-        cEstUnRepère = false;
+        cEstUnRepere = false;
         typeCourant = TYPE_ENTIER;
 
         objet.modifie(Ce, CodesInstructions.CODE_EMPILER);
         Ce++;
-        objet.modifie(Ce, Integer.parseInt(AnalyseSyntaxique.tête.unité));
+        objet.modifie(Ce, Integer.parseInt(AnalyseSyntaxique.tete.unite));
         Ce++;
     }
 
@@ -291,7 +291,7 @@ public class Génération {
 
     public static void fin() throws BigLangException {
         String fin = "fini";
-        objet.modifie(Ce, CodesInstructions.CODE_ÉCRIRE);
+        objet.modifie(Ce, CodesInstructions.CODE_ECRIRE);
         Ce++;
         objet.modifie(Ce, (('f' * 256 + 'i') * 256 + 'n') * 256 + 'i');
         Ce++;
@@ -306,38 +306,38 @@ public class Génération {
     //
     //
     public static void genNon() throws BigLangException {
-        if (cEstUnRepère) {
+        if (cEstUnRepere) {
             objet.modifie(Ce, CodesInstructions.CODE_VALEUR);
             Ce++;
         }
-        cEstUnRepère = false;
+        cEstUnRepere = false;
         if (typeCourant == TYPE_BOOLEEN) {
             objet.modifie(Ce, CodesInstructions.CODE_NON);
             Ce++;
         } else {
-            throw new BigLangException(AnalyseSyntaxique.tête.unité, BigLangException.BL_SEM, BigLangException.BL_SEM_TYPE_BOOL_ATTENDU);
+            throw new BigLangException(AnalyseSyntaxique.tete.unite, BigLangException.BL_SEM, BigLangException.BL_SEM_TYPE_BOOL_ATTENDU);
         }
     }
 
-    public static void opérandeGauche() throws BigLangException {
-        Opérateur o = (Opérateur) tableDesOpérateurs.get(AnalyseSyntaxique.tête.unité);
-        if (o.typeGauche != TYPE_INEXISTANT && o.valeurAGauche && cEstUnRepère) {
+    public static void operandeGauche() throws BigLangException {
+        Operateur o = (Operateur) tableDesOperateurs.get(AnalyseSyntaxique.tete.unite);
+        if (o.typeGauche != TYPE_INEXISTANT && o.valeurAGauche && cEstUnRepere) {
             objet.modifie(Ce, CodesInstructions.CODE_VALEUR);
             Ce++;
-            cEstUnRepère = false;
+            cEstUnRepere = false;
         }
         if (o.typeGauche != TYPE_INEXISTANT && o.typeGauche != typeCourant) {
             throw new BigLangException(o.enClair + ": " + typesEnClair[typeCourant], BigLangException.BL_SEM, BigLangException.BL_SEM_TYPE_GAUCHE_NON_CONFORME);
         }
-        pileDesOpérateursVus.push(o);
+        pileDesOperateursVus.push(o);
     }
 
-    public static void opérandeDroit() throws BigLangException {
-        Opérateur o = (Opérateur) pileDesOpérateursVus.pop();
-        if (o.typeDroit != TYPE_INEXISTANT && o.valeurADroite && cEstUnRepère) {
+    public static void operandeDroit() throws BigLangException {
+        Operateur o = (Operateur) pileDesOperateursVus.pop();
+        if (o.typeDroit != TYPE_INEXISTANT && o.valeurADroite && cEstUnRepere) {
             objet.modifie(Ce, CodesInstructions.CODE_VALEUR);
             Ce++;
-            cEstUnRepère = false;
+            cEstUnRepere = false;
         }
         if (o.typeDroit != TYPE_INEXISTANT && o.typeDroit != typeCourant) {
             throw new BigLangException(o.enClair + ": " + typesEnClair[typeCourant], BigLangException.BL_SEM, BigLangException.BL_SEM_TYPE_DROIT_NON_CONFORME);
@@ -346,40 +346,40 @@ public class Génération {
         objet.modifie(Ce, o.code);
         Ce++;
 
-        cEstUnRepère = o.leRésultatEstUnRepère;
-        typeCourant = o.typeRésultat;
+        cEstUnRepere = o.leResultatEstUnRepere;
+        typeCourant = o.typeResultat;
     }
 
-    public static void opérandeGaucheAff() throws BigLangException {
-        if (!cEstUnRepère) {
+    public static void operandeGaucheAff() throws BigLangException {
+        if (!cEstUnRepere) {
             throw new BigLangException(BigLangException.BL_SEM, BigLangException.BL_SEM_VAL_A_GAUCHE_AFF);
         }
         pileDesTypesVus.push(new Integer(typeCourant));
     }
 
-    public static void opérandeDroitAff() throws BigLangException {
+    public static void operandeDroitAff() throws BigLangException {
         int typeAGauche = ((Integer) pileDesTypesVus.pop()).intValue();
         if (typeCourant != typeAGauche) {
             throw new BigLangException("affectation : " + typesEnClair[typeCourant], BigLangException.BL_SEM, BigLangException.BL_SEM_TYPE_DROIT_NON_CONFORME);
         }
-        if (cEstUnRepère) {
+        if (cEstUnRepere) {
             objet.modifie(Ce, CodesInstructions.CODE_VALEUR);
             Ce++;
-            cEstUnRepère = false;
+            cEstUnRepere = false;
         }
         objet.modifie(Ce, CodesInstructions.CODE_AFFECTER);
         Ce++;
-        cEstUnRepère = false;
+        cEstUnRepere = false;
     }
 
     public static void finCondition() throws BigLangException {
         if (typeCourant != TYPE_BOOLEEN) {
             throw new BigLangException("si : " + typesEnClair[typeCourant], BigLangException.BL_SEM, BigLangException.BL_SEM_TYPE_BOOL_ATTENDU);
         }
-        if (cEstUnRepère) {
+        if (cEstUnRepere) {
             objet.modifie(Ce, CodesInstructions.CODE_VALEUR);
             Ce++;
-            cEstUnRepère = false;
+            cEstUnRepere = false;
         }
         objet.modifie(Ce, CodesInstructions.CODE_BSF);
         Ce++;
@@ -403,7 +403,7 @@ public class Génération {
         objet.modifie(adFinCondition, Ce);
 
         pileDesTypesVus.push(new Integer(typeCourant));
-        pileDesRepères.push(new Boolean(cEstUnRepère));
+        pileDesReperes.push(new Boolean(cEstUnRepere));
     }
     //
     //
@@ -412,32 +412,32 @@ public class Génération {
     //
 
     public static void finSinon() throws BigLangException {
-        boolean alorsEstUnRep = ((Boolean) pileDesRepères.pop()).booleanValue();
+        boolean alorsEstUnRep = ((Boolean) pileDesReperes.pop()).booleanValue();
         int typeAlors = ((Integer) pileDesTypesVus.pop()).intValue();
         int adFinAlors = ((Integer) pileDesReprises.pop()).intValue();
 
-        if (alorsEstUnRep && !cEstUnRepère) {
+        if (alorsEstUnRep && !cEstUnRepere) {
             objet.modifie(adFinAlors - 2, CodesInstructions.CODE_VALEUR);
         }
-        if (!alorsEstUnRep && cEstUnRepère) {
+        if (!alorsEstUnRep && cEstUnRepere) {
             objet.modifie(Ce, CodesInstructions.CODE_VALEUR);
             Ce++;
-            cEstUnRepère = false;
+            cEstUnRepere = false;
         }
 
         switch (typeAlors) {
             case TYPE_NEUTRE:                    // neutraliser le sinon
                 if (typeCourant != TYPE_NEUTRE) {
-                    objet.modifie(Ce, CodesInstructions.CODE_DÉPILER);
+                    objet.modifie(Ce, CodesInstructions.CODE_DEPILER);
                     Ce++;
                     typeCourant = TYPE_NEUTRE;
-                    cEstUnRepère = false;
+                    cEstUnRepere = false;
                 }
                 break;
             case TYPE_BOOLEEN:
                 switch (typeCourant) {
                     case TYPE_NEUTRE:                // neutraliser le alors
-                        objet.modifie(adFinAlors - 2, CodesInstructions.CODE_DÉPILER);
+                        objet.modifie(adFinAlors - 2, CodesInstructions.CODE_DEPILER);
                         break;
                     case TYPE_BOOLEEN:
                         break;                            // types conformes et équilibrés
@@ -450,7 +450,7 @@ public class Génération {
             case TYPE_ENTIER:
                 switch (typeAlors) {
                     case TYPE_NEUTRE:                // neutraliser le alors
-                        objet.modifie(adFinAlors - 2, CodesInstructions.CODE_DÉPILER);
+                        objet.modifie(adFinAlors - 2, CodesInstructions.CODE_DEPILER);
                         break;
                     case TYPE_BOOLEEN:
                         throw new BigLangException("alors/sinon : " + typesEnClair[typeCourant], BigLangException.BL_SEM, BigLangException.BL_SEM_TYPES_NON_CONFORMES);
@@ -469,10 +469,10 @@ public class Génération {
 
     public static void fsiSansSinon() throws BigLangException {
         if (typeCourant != TYPE_NEUTRE) {
-            objet.modifie(Ce, CodesInstructions.CODE_DÉPILER);
+            objet.modifie(Ce, CodesInstructions.CODE_DEPILER);
             Ce++;
             typeCourant = TYPE_NEUTRE;
-            cEstUnRepère = false;
+            cEstUnRepere = false;
         }
 
         int adFinCondition = ((Integer) pileDesReprises.pop()).intValue();
@@ -518,25 +518,25 @@ public class Génération {
         }
     }
 
-    static class Opérateur {
+    static class Operateur {
         int code;
         int typeGauche;
         int typeDroit;
-        int typeRésultat;
+        int typeResultat;
         boolean valeurAGauche;
         boolean valeurADroite;
-        boolean leRésultatEstUnRepère;
+        boolean leResultatEstUnRepere;
 
         String enClair;
 
-        public Opérateur(int c, int g, int d, int r, boolean vg, boolean vd, boolean rr, String o) {
+        public Operateur(int c, int g, int d, int r, boolean vg, boolean vd, boolean rr, String o) {
             this.code = c;
             this.typeGauche = g;
             this.typeDroit = d;
-            this.typeRésultat = r;
+            this.typeResultat = r;
             this.valeurAGauche = vg;
             this.valeurADroite = vd;
-            this.leRésultatEstUnRepère = rr;
+            this.leResultatEstUnRepere = rr;
             this.enClair = o;
         }
     }

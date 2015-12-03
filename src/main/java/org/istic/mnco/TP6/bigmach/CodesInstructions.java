@@ -15,10 +15,10 @@ public class CodesInstructions {
     public static final int CODE_AFFECTER = 11;
     public static final int CODE_VALEUR = 12;
     public static final int CODE_EMPILER = 13;
-    public static final int CODE_DÉPILER = 14;
+    public static final int CODE_DEPILER = 14;
     public static final int CODE_SOMMETA = 15;
     public static final int CODE_LIRE = 16;
-    public static final int CODE_ÉCRIRE = 17;
+    public static final int CODE_ECRIRE = 17;
     public static final int CODE_NOP = 18;
     public static final int CODE_BSF = 19;
     public static final int CODE_BSV = 20;

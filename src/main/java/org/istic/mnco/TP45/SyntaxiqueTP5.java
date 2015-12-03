@@ -1,6 +1,7 @@
 package org.istic.mnco.TP45;
 
 import org.istic.mnco.TP45.automate.Analex1;
+import org.istic.mnco.TP45.lexical.constlex;
 /*
  * SyntaxiqueTP5.java
  */
@@ -81,8 +82,8 @@ public class SyntaxiqueTP5 {
 		void STerme() {
 			// <STerme> ::= + <Exp> | - <Exp> | vide
             switch (lexlu) {
-                case lexplus: Exp(); AvanceTete(); break;
-                case lexmoins: Exp(); AvanceTete(); break;
+                case constlex.lexplus: Exp(); AvanceTete(); break;
+                case constlex.lexmoins: Exp(); AvanceTete(); break;
                 default: break;
             }
 
@@ -94,9 +95,9 @@ public class SyntaxiqueTP5 {
 			
 //			. .. COMPLETER !!
             switch (lexlu) {
-                case lexentier: GPEntier(); AvanceTete(); break;
+                case constlex.lexentier: GPEntier(); AvanceTete(); break;
                 case '(': Exp(); AvanceTete();
-                    if (lexlu != lexPF) {
+                    if (lexlu != constlex.lexPF) {
                         System.out.println("Erreur syntaxique");
                     }
                     break;
@@ -111,7 +112,7 @@ public class SyntaxiqueTP5 {
 		
 //			. .. COMPLETER !!
 			switch (lexlu) {
-                case lexmult:
+                case constlex.lexmult:
             }
 
 		} // fin SFacteur()

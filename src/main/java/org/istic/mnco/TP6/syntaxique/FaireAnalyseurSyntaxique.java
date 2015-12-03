@@ -108,19 +108,19 @@ public class FaireAnalyseurSyntaxique {
     }
 
     public static void lexical() {
-        permis.add(FaireCatégoriesLexicales.quelleValeur(s));
+        permis.add(FaireCategoriesLexicales.quelleValeur(s));
         sortie(" ||");
-        aLaLigne("\ttête.catégorie == CatégoriesLexicales.LEX_" + s);
-        avTête();
+        aLaLigne("\ttete.categorie == CategoriesLexicales.LEX_" + s);
+        avTete();
     }
 
     public static void lexical1() {
-        permis.add(FaireCatégoriesLexicales.quelleValeur(s));
-        sortie("tête.catégorie == CatégoriesLexicales.LEX_" + s);
-        avTête();
+        permis.add(FaireCategoriesLexicales.quelleValeur(s));
+        sortie("tete.categorie == CategoriesLexicales.LEX_" + s);
+        avTete();
     }
 
-    public static void sélection() {
+    public static void selection() {
         consommer("selection");
         lexical1();
         while (!s.equals("/selection")) {
@@ -130,48 +130,48 @@ public class FaireAnalyseurSyntaxique {
         consommer("/selection");
     }
 
-    public static void élément() {
+    public static void element() {
         commentaire = commentaire + s + " ";
         if (s.charAt(0) >= 'A' && s.charAt(0) <= 'Z') {
             // Non terminal
             aLaLigne("" + s + " () ;");
         } else if ((s.charAt(0) == '$')) {
             // point de génération
-            aLaLigne("Génération." + s.substring(1) + " () ;");
+            aLaLigne("Generation." + s.substring(1) + " () ;");
         } else if (s.equals("vide")) {
             // vide
             aLaLigne("// rien");
         } else {
             // terminal
-            String elt = FaireCatégoriesLexicales.quelNom(s);
+            String elt = FaireCategoriesLexicales.quelNom(s);
             if (elt == null) {
                 System.out.println("PB avec le terminal: " + s);
             }
-            aLaLigne("franchir (CatégoriesLexicales.LEX_" + elt + ", BigLangException.BL_SYNT_" + elt + "_ATTENDU) ;");
+            aLaLigne("franchir (CategoriesLexicales.LEX_" + elt + ", BigLangException.BL_SYNT_" + elt + "_ATTENDU) ;");
         }
-        avTête();
+        avTete();
     }
 
-    public static void élément1() {
+    public static void element1() {
         commentaire = commentaire + s + " ";
         if (s.charAt(0) >= 'A' && s.charAt(0) <= 'Z') {
             // Non terminal
             aLaLigne("" + s + " () ;");
         } else if ((s.charAt(0) == '$')) {
             // point de génération
-            aLaLigne("Génération." + s.substring(1) + " () ;");
+            aLaLigne("Generation." + s.substring(1) + " () ;");
         } else if (s.equals("vide")) {
             // vide
             aLaLigne("// rien");
         } else {
             // terminal
-            String elt = FaireCatégoriesLexicales.quelNom(s);
+            String elt = FaireCategoriesLexicales.quelNom(s);
             if (elt == null) {
                 System.out.println("PB avec le terminal: " + s);
             }
-            aLaLigne("franchir (CatégoriesLexicales.LEX_" + elt + ", BigLangException.BL_SYNT_" + elt + "_ATTENDU) ;");
+            aLaLigne("franchir (CategoriesLexicales.LEX_" + elt + ", BigLangException.BL_SYNT_" + elt + "_ATTENDU) ;");
         }
-        avTête();
+        avTete();
     }
 
     public static void droite() {
@@ -179,12 +179,12 @@ public class FaireAnalyseurSyntaxique {
         commentaire = commentaire + "| ";
         if (s.equals("selection")) {
             aLaLigne("else if (");
-            sélection();
+            selection();
         }
         consommer("corps");
-        élément1();
+        element1();
         while (!s.equals("/corps")) {
-            élément();
+            element();
         }
         aLaLigne("}");
         consommer("/corps");
@@ -195,12 +195,12 @@ public class FaireAnalyseurSyntaxique {
         consommer("pd");
         if (s.equals("selection")) {
             aLaLigne("if      (");
-            sélection();
+            selection();
         }
         consommer("corps");
-        élément1();
+        element1();
         while (!s.equals("/corps")) {
-            élément();
+            element();
         }
         aLaLigne("}");
         consommer("/corps");
@@ -227,9 +227,9 @@ public class FaireAnalyseurSyntaxique {
         } else if ((s.charAt(0) == '$')) {
             // point de génération
             if (!pGVue) {
-                genAvant = "Génération." + s.substring(1) + " () ;";
+                genAvant = "Generation." + s.substring(1) + " () ;";
             } else {
-                genApres = "Génération." + s.substring(1) + " () ;";
+                genApres = "Generation." + s.substring(1) + " () ;";
             }
             commentaire = commentaire + " " + s;
 
@@ -250,22 +250,22 @@ public class FaireAnalyseurSyntaxique {
             aLaLigne("public static void " + nomPG + " () throws BigLangException {");
         } else if ((s.charAt(0) == '$')) {
             // point de génération
-            genAvant = "Génération." + s.substring(1) + " () ;";
+            genAvant = "Generation." + s.substring(1) + " () ;";
             commentaire = commentaire + " " + s;
         }
 
-        avTête();
+        avTete();
         while (!s.equals("/gauche")) {
             gauche();
-            avTête();
+            avTete();
         }
         commentaire = commentaire + " -> ";
         //aLaLigne("public static void "+ nomPG +" () throws BigLangException {");
-        // avTête();
+        // avTete();
         consommer("/gauche");
     }
 
-    public static void règle() {
+    public static void regle() {
         consommer("regle");
         permis.clear();
         initMultiBuf();
@@ -293,18 +293,18 @@ public class FaireAnalyseurSyntaxique {
         consommer("/regle");
     }
 
-    public static void règles() {
-        règle();
+    public static void regles() {
+        regle();
         aLaLigne("}");
         commentaire = commentaire + "*/";
         multiBuf.set(0, multiBuf.get(0) + commentaire);
         viderMultiBuf();
         if (s.equals("regle")) {
-            règles();
+            regles();
         }
     }
 
-    public static void avTête() {
+    public static void avTete() {
         s = g.lireChaine(" \n\r\t><");
         // System.out.println ("tete: "+s);
     }
@@ -313,7 +313,7 @@ public class FaireAnalyseurSyntaxique {
         if (!s.equals(m)) {
             System.out.println("PB avec: " + s + " vs " + m);
         }
-        avTête();
+        avTete();
     }
 
     public static void main(String[] args) {
@@ -322,10 +322,10 @@ public class FaireAnalyseurSyntaxique {
         g = new LectureFichierTexte("grammaire.xml");
         sortie("package TP6.syntaxique;");
         aLaLigne("import TP6.BigLangException;");
-        aLaLigne("import TP6.generation.Génération;");
+        aLaLigne("import TP6.generation.Generation;");
         aLaLigne("import TP6.lexical.AnalyseLexicale;");
-        aLaLigne("import TP6.lexical.AnalyseLexicale.TêteDeLecture;");
-        aLaLigne("import TP6.lexical.CatégoriesLexicales;");
+        aLaLigne("import TP6.lexical.AnalyseLexicale.TeteDeLecture;");
+        aLaLigne("import TP6.lexical.CategoriesLexicales;");
         aLaLigne("/*");
         aLaLigne(" * Créé le " + cal.get(Calendar.DAY_OF_MONTH) + " " + lesMois[cal.get(Calendar.MONTH)] + " " + cal.get(Calendar.YEAR));
         aLaLigne(" *");
@@ -338,22 +338,22 @@ public class FaireAnalyseurSyntaxique {
         aLaLigne(" */");
         aLaLigne("public class AnalyseSyntaxique {");
         aLaLigne("static AnalyseLexicale lex = new AnalyseLexicale () ;");
-        aLaLigne("public static TêteDeLecture tête ;");
-        aLaLigne("static void initTête (String f) {");
-        aLaLigne("	lex.initTête(f+\".big\");");
-        aLaLigne("	tête = lex.lexLu ;");
+        aLaLigne("public static TeteDeLecture tete ;");
+        aLaLigne("static void initTete (String f) {");
+        aLaLigne("	lex.initTete(f+\".big\");");
+        aLaLigne("	tete = lex.lexLu ;");
         aLaLigne("}");
         aLaLigne("static void AvTête () {");
         aLaLigne("try {");
         aLaLigne("lex.lancer() ;");
-        aLaLigne("tête = lex.lexLu ;");
+        aLaLigne("tete = lex.lexLu ;");
         aLaLigne("} catch (Exception e) {");
-        aLaLigne("tête.catégorie = CatégoriesLexicales.LEX_ERR ;");
+        aLaLigne("tete.categorie = CategoriesLexicales.LEX_ERR ;");
         aLaLigne("}");
         aLaLigne("}");
         aLaLigne("static void franchir (int elt, int err) throws BigLangException {");
-        aLaLigne("if (tête.catégorie != elt) {throw new BigLangException (BigLangException.BL_SYNT, err);}");
-        aLaLigne("a.texte(tête);");
+        aLaLigne("if (tete.categorie != elt) {throw new BigLangException (BigLangException.BL_SYNT, err);}");
+        aLaLigne("a.texte(tete);");
         aLaLigne("AvTête() ;");
         aLaLigne("}");
         aLaLigne("static ArbreSyntaxique a ;");
@@ -361,36 +361,36 @@ public class FaireAnalyseurSyntaxique {
 		aLaLigne("public static void prélude (String fichier) {");
 		aLaLigne("a = new ArbreSyntaxique (fichier+\".xml\") ;");
 		aLaLigne("lex = new AnalyseLexicale () ;");
-		aLaLigne("lex.initTête(fichier+\".big\");");
+		aLaLigne("lex.initTete(fichier+\".big\");");
 		aLaLigne("AvTête() ;");		
 		aLaLigne("}");
 		aLaLigne("public static void postlude () {");
 		aLaLigne("a.clore();");
 		aLaLigne("}");
 		*/
-        avTête();
+        avTete();
         while (!s.equals("grammaire")) {
-            avTête();
+            avTete();
         }
-        avTête();
+        avTete();
         while (!s.equals("grammaire")) {
-            avTête();
+            avTete();
         }
-        avTête();
-        règles();
+        avTete();
+        regles();
         consommer("/grammaire");
         aLaLigne("public static void main (String [] args) {");
         aLaLigne("a = new ArbreSyntaxique (args[0]+\".xml\", \"" + axiome + "\") ;");
         aLaLigne("lex = new AnalyseLexicale () ;");
-        aLaLigne("initTête(args[0]);");
-        aLaLigne("Génération.initGénération(args[0]) ;");
+        aLaLigne("initTete(args[0]);");
+        aLaLigne("Generation.initGeneration(args[0]) ;");
         aLaLigne("AvTête() ;");
         aLaLigne("try {");
         aLaLigne(axiome + "() ;");
         aLaLigne("} catch (BigLangException e) {");
         aLaLigne("e.printStackTrace();");
         aLaLigne("}");
-        aLaLigne("Génération.objet.sortie();");
+        aLaLigne("Generation.objet.sortie();");
         aLaLigne("a.clore();");
         aLaLigne("}");
         aLaLigne("}");

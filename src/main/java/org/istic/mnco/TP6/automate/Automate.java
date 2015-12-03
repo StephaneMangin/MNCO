@@ -39,11 +39,11 @@ public class Automate {
     /**
      * Tête de lecture
      */
-    protected int tête;
+    protected int tete;
     /**
-     * Table des états
+     * Table des etats
      */
-    protected int[] états;
+    protected int[] etats;
     /**
      * Pour chaque état, indique s'il est ou non final.
      */
@@ -63,53 +63,53 @@ public class Automate {
     /**
      * Indique quel est l'état courant.
      */
-    protected int étatCourant;
+    protected int etatCourant;
 
     /**
-     * Initialisation de la <code>bande</code> d'entrée et de la <code>tête</code> de lecture
+     * Initialisation de la <code>bande</code> d'entrée et de la <code>tete</code> de lecture
      *
      * @param f nom du fichier qui sert de bande d'entrée. Le nom <code>"clavier"</code> désigne justement le clavier !
      */
-    public void initTête(String f) {
+    public void initTete(String f) {
         bande = new LectureFichierTexte(f);
         if (!bande.finDeFichier() && !cEst.fini()) {
-            tête = bande.lireUnCar();
-            System.out.print((char) tête); // pb pour sortie le code source !!!!
+            tete = bande.lireUnCar();
+            System.out.print((char) tete); // pb pour sortie le code source !!!!
         } else {
-            tête = -1;
+            tete = -1;
         }
     }
 
     /**
-     * Déplacement forcé de la tête de lecture.
-     * Modifie <code>tête</code>.
-     * Si la <code>bande</code> d'entrée est épuisée, <code>tête</code> est positionné à -1.
+     * Déplacement forcé de la tete de lecture.
+     * Modifie <code>tete</code>.
+     * Si la <code>bande</code> d'entrée est épuisée, <code>tete</code> est positionné à -1.
      */
-    public void forcerTête() {
+    public void forcerTete() {
         if (!bande.finDeFichier()) {
-            tête = bande.lireUnCar();
+            tete = bande.lireUnCar();
         } else {
-            tête = -1;
+            tete = -1;
         }
     }
 
     /**
-     * Réinitialisation de la tête de lecture.
+     * Réinitialisation de la tete de lecture.
      *
      * @deprecated
      */
-    public void reInitTête() {
+    public void reInitTete() {
         // rien à faire, semble-t'il
     }
 
     /**
-     * Déplacement normal (ie. si possible et permis) de la tête de lecture.
-     * Modifie <code>tête</code>.
+     * Déplacement normal (ie. si possible et permis) de la tete de lecture.
+     * Modifie <code>tete</code>.
      */
-    public void avancerTête() {
+    public void avancerTete() {
         if (!bande.finDeFichier() && !cEst.fini()) {
-            tête = bande.lireUnCar();
-            System.out.print((char) tête); // pb pour sortie le code source !!!!
+            tete = bande.lireUnCar();
+            System.out.print((char) tete); // pb pour sortie le code source !!!!
         }
     }
 
@@ -119,12 +119,12 @@ public class Automate {
      * @throws Exception toutes les actions peuvent poster une exception
      */
     public void lancer() throws Exception {
-        étatCourant = 0;
+        etatCourant = 0;
         while (!bande.finDeFichier() && !cEst.fini()) {
-            char c = (char) tête;
-            actions[étatCourant][tête].executer();
-            étatCourant = transitions[étatCourant][tête];
-            avancerTête();
+            char c = (char) tete;
+            actions[etatCourant][tete].executer();
+            etatCourant = transitions[etatCourant][tete];
+            avancerTete();
         }
         actionFinale.executer();
     }

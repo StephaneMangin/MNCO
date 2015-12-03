@@ -13,7 +13,7 @@ package org.istic.mnco.TP6.service;
  *         Window - Preferences - Java - Code Style - Code Templates
  */
 public class Service {
-    public static String compléterAGauche(String s, int n) {
+    public static String completerAGauche(String s, int n) {
         String r = "";
         for (int i = 0; i < n - s.length(); i++) {
             r = r + " ";
@@ -30,7 +30,7 @@ public class Service {
     }
 
     public static String formaterUnEntier(int k, int n) {
-        return compléterAGauche(Integer.toString(k), n);
+        return completerAGauche(Integer.toString(k), n);
     }
 
     public static String motToAscii(int n) {

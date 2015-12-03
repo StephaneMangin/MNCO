@@ -291,7 +291,7 @@ public class Automate {
 	/**
 	 * 
 	 * @param Q etat cible
-	 * pose une transition P->Q pour tous les états et tous les caracteres
+	 * pose une transition P->Q pour tous les etats et tous les caracteres
 	 */
 	protected void arcs_defauts(int Q){
 		for (int P=1;P<=NbEtats;P++)

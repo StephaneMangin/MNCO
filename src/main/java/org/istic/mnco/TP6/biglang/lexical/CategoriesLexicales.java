@@ -5,9 +5,9 @@ import java.util.Hashtable;
 /**
  * BigLang : catégories lexicales et crible
  *
- * @author syntaxique.FaireCatégoriesLexicales
+ * @author syntaxique.FaireCategoriesLexicales
  */
-public class CatégoriesLexicales {
+public class CategoriesLexicales {
     public static final int LEX_AFF = 0;
     public static final int LEX_PT_VIRG = 1;
     public static final int LEX_VIRG = 2;
@@ -43,7 +43,7 @@ public class CatégoriesLexicales {
     // ajouté
     public static final int LEX_TANTQUE = 33;
     public static final int LEX_FINTANTQUE = 34;
-    public static Hashtable crible = créerCrible();
+    public static Hashtable crible = creerCrible();
     public static String[] enClair = {
             "AFF",
             "PT_VIRG",
@@ -83,7 +83,7 @@ public class CatégoriesLexicales {
 
     };
 
-    static Hashtable créerCrible() {
+    static Hashtable creerCrible() {
         Hashtable c = new Hashtable();
         c.put("si", new Integer(LEX_SI));
         c.put("alors", new Integer(LEX_ALORS));
