@@ -1,14 +1,13 @@
 entier i, j, k;
-booleen z
 debut
     lire i;
     lire j;
-    z := i < j
-    si z
+    si i < j
         alors
             k := j
         sinon
             k := i
+    fsi;
     ecrire i;
     ecrire j;
     ecrire k

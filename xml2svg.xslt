@@ -10,8 +10,8 @@
 		doctype-public="-//W3C//DTD SVG 1.0//EN"/> -->
   <xsl:output method="xml" indent="yes" omit-xml-declaration="yes"/>
   <xsl:strip-space elements="*"/>
-  <xsl:include href="string-width.xslt"/>
-  <xsl:include href="trunk.xslt"/>
+  <xsl:include href="src/main/resources/TP6/examples/string-width.xslt"/>
+  <xsl:include href="src/main/resources/TP6/examples/trunk.xslt"/>
   <xsl:param name="maxProf" select="-1"/>
   <xsl:param name="text.style" select="'stroke:none;'"/>
   <xsl:param name="graph.style" select='concat("fill-rule:nonzero;clip-rule:nonzero;",
