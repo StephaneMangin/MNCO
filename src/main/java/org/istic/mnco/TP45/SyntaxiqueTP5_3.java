@@ -6,7 +6,7 @@ import org.istic.mnco.TP45.lexical.constlex;
 import java.util.HashMap;
 import java.util.Map;
 /*
- * SyntaxiqueTP5_2.java
+ * SyntaxiqueTP5_3.java
  */
 
 
@@ -22,10 +22,10 @@ import java.util.Map;
  * <Facteur> ::= Entier | ( <Exp> )
  * <SFacteur> ::= * <Terme> | / <Terme> | vide
  * <SDecla> ::= <Decla> <SDecla> | vide
- * <Decla> ::= <Ident> = <Entier>
+ * <Decla> ::= <Ident> = <Exp>
  */
 
-public class SyntaxiqueTP5_2 {
+public class SyntaxiqueTP5_3 {
 
 
     Analex1 monauto; // l'analyseur leical
@@ -38,7 +38,7 @@ public class SyntaxiqueTP5_2 {
     /*
      * Constructeur
      */
-    SyntaxiqueTP5_2(String nomfich) {
+    SyntaxiqueTP5_3(String nomfich) {
         monauto = new Analex1();
         Ginit();
         monauto.initTete(nomfich);
@@ -168,16 +168,12 @@ public class SyntaxiqueTP5_2 {
             System.out.println("Erreur syntaxique, egal manquant");
         }
         AvanceTete();
-        if (lexlu != constlex.lexentier) {
-            System.out.println("Erreur d'attribution de valeur.");
-        }
-        String valeurEntier = valeurlue;
-        AvanceTete();
+        Exp();
+        idents.put(ident, depiler());
         if (lexlu != constlex.lexpointvirgule) {
             System.out.println("Erreur syntaxique, point-virgule manquant");
         }
         AvanceTete();
-        idents.put(ident, Integer.parseInt(valeurEntier));
         System.out.println(idents);
     } // fin Decla()
 

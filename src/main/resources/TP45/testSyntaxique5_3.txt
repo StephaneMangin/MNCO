@@ -1,0 +1,1 @@
+aa = 2 ; bb = 5; cc = 2 * (aa+bb) ; dd = 6*aa - cc ; # aa + bb - (cc * dd) .
