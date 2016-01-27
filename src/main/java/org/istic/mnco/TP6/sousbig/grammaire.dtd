@@ -1,6 +1,0 @@
-<!ELEMENT grammaire   (regle+)>
-<!ELEMENT regle       (gauche,pd+)>
-<!ELEMENT gauche      (#PCDATA)>
-<!ELEMENT pd          (selection, corps)>
-<!ELEMENT corps       (#PCDATA)>
-<!ELEMENT selection   (#PCDATA)>

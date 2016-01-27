@@ -1,6 +1,0 @@
-entier a, b ;
-debut
-   a:=1;
-   b:=2;
-   a+b
-fin
